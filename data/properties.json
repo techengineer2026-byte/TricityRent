@@ -1,0 +1,159 @@
+{
+    "PID0001": {
+        "id": "PID0001",
+        "title": "3/4 BHK Villa for Sale",
+        "propertyType": "Villa",
+        "bhk": "3/4 BHK",
+        "status": "For Sale",
+        "area": [
+            "90 sq yards",
+            "120 sq yards"
+        ],
+        "possession": "Ready to Move",
+        "location": {
+            "sector"    : "Sector 115",
+            "road": "Kharar-Landra Road",
+            "city": "Kharar",
+            "district": "Mohali",
+            "state": "Punjab"
+        },
+        "price": "On Request",
+        "description": "3/4 BHK ready-to-move villas available in Sector 115, Kharar-Landra Road.",
+        "images": [
+            "../assets/images/Data/PID0001.webp",
+            "../assets/images/Data/PID0002.jpg",
+            "../assets/images/Data/PID0003.jpg",
+            "../assets/images/Data/PID0004.jpg",
+            "../assets/images/Data/PID0005.jpg"
+        ],
+        "category": {
+            "label": "Properties",
+            "url": "/properties",
+            "type": "Residential"
+        }
+    },
+    "PID0014": {
+        "id": "PID0014",
+        "title": "200 Gajj Plot for Sale",
+        "propertyType": "Plot",
+        "status": "For Sale",
+        "plotSize": "200 Gajj (30/60)",
+        "roadWidth": "30 feet",
+        "possession": "Ready",
+        "location": {
+            "sector": "Sector 115",
+            "city": "Kharar",
+            "district": "Mohali",
+            "state": "Punjab"
+        },
+        "price": "₹37,000 per Gajj",
+        "contact": "Kulwant Singh Badala, 9855105083",
+        "description": "Gull mohar approved 200 Gajj plot for sale in Sector 115, Kharar (Mohali).",
+        "images": [
+            "/assets/images/Data/PID0014.jpg"
+        ],
+        "category": {
+            "label": "Properties",
+            "url": "/properties",
+            "type": "Residential"
+        }
+    },
+    "PID0006": {
+        "id": "PID0006",
+        "title": "107 Gajj Plot for Sale – Sec 125, New Sunny Enclave",
+        "propertyType": "Plot",
+        "status": "Urgent Sale",
+        "plotSize": "107 Gajj",
+        "possession": "With NOC",
+        "location": {
+            "sector": "Sector 125",
+            "locality": "New Sunny Enclave",
+            "city": "Mohali",
+            "state": "Punjab"
+        },
+        "nearby": [
+            "Budha Park",
+            "Kehndriya Vihar"
+        ],
+        "description": "Prime location 107 Gajj plot for sale in Sec 125 New Sunny Enclave, Mohali. Best connectivity to markets, schools, hospitals.",
+        "images": [
+            "/assets/images/Data/PID0006.jpg",
+            "/assets/images/Data/PID0007.jpg",
+            "/assets/images/Data/PID0008.jpg"
+        ],
+        "category": {
+            "label": "Properties",
+            "url": "/properties",
+            "type": "Residential"
+        }
+    },
+    "PID0009": {
+        "id": "PID0009",
+        "title": "3 BHK Kothi for Sale",
+        "propertyType": "Kothi",
+        "bhk": "3 BHK",
+        "status": "For Sale",
+        "price": "₹60,00,000",
+        "possession": "Ready to Move",
+        "amenities": [
+            "3 Washrooms",
+            "2 Modular Kitchens",
+            "Gated Society",
+            "Near Shops, School, College"
+        ],
+        "location": {
+            "sector": "Prime Location",
+            "city": "Kharar",
+            "district": "Mohali",
+            "state": "Punjab"
+        },
+        "negotiable": true,
+        "images": [
+            "/assets/images/Data/PID0009.jpg",
+            "/assets/images/Data/PID0010.jpg",
+            "/assets/images/Data/PID0011.jpg",
+            "/assets/images/Data/PID0012.jpg",
+            "/assets/images/Data/PID0013.jpg"
+        ],
+        "category": {
+            "label": "Properties",
+            "url": "/properties",
+            "type": "Residential"
+        }
+    },
+    "PID0015": {
+        "id": "PID0015",
+        "title": "1 BHK Independent Flat in Amayra Greens Phase 1",
+        "propertyType": "Apartment",
+        "bhk": "1 BHK",
+        "status": "For Rent",
+        "area": "1900 sq ft",
+        "possession": "Ready to Move",
+        "features": [
+            "AC",
+            "Refrigerator",
+            "Water Purifier",
+            "Double Bed & Mattress",
+            "Modular Kitchen",
+            "Independent Terrace"
+        ],
+        "availability": "Family / Girls / Boys",
+        "price": "₹15,000/month",
+        "location": {
+            "phase": "Amayra Greens Phase 1",
+            "city": "Kharar",
+            "district": "Mohali",
+            "state": "Punjab"
+        },
+        "images": [
+            "/assets/images/Data/PID0015.jpg",
+            "/assets/images/Data/PID0016.jpg",
+            "/assets/images/Data/PID0017.jpg"
+        ],
+        "category": {
+            "label": "Properties",
+            "url": "/properties",
+            "type": "Residential"
+        }
+    }
+}

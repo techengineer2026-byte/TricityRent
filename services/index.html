@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - HouseHunt</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS (Linking up one level) -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <!-- ==================== MOBILE BOTTOM NAVIGATION ==================== -->
+    <!-- Added ID: mobileBottomNav -->
+    <div id="mobileBottomNav" class="fixed-bottom d-block d-lg-none z-3 pb-3 px-3 transition-nav">
+        <div class="mobile-nav-container shadow-lg border">
+            <div class="d-flex justify-content-between align-items-center">
+
+                <a href="/" class="mobile-nav-item active">
+                    <i class="bi bi-house"></i>
+                    <span>Home</span>
+                </a>
+
+                <a href="/properties" class="mobile-nav-item">
+                    <i class="bi bi-building"></i>
+                    <span>Property</span>
+                </a>
+
+                <a href="/contact-us" class="mobile-nav-item">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>Contact</span>
+                </a>
+
+                <a href="/about-us" class="mobile-nav-item">
+                    <i class="bi bi-info-circle"></i>
+                    <span>About</span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <!-- ==================== NAVBAR ==================== -->
+    <header class="navbar navbar-expand-lg fixed-top bg-white border-bottom transition-all" id="mainNavbar">
+        <div class="container-xl">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <div class="position-relative">
+                    <img src="../assets/images/Logo1.png" alt="HouseHunt" class="navbar-logo object-fit-contain">
+                </div>
+            </a>
+            <button class="navbar-toggler border-0 p-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent">
+                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                    stroke-linejoin="round" class="text-secondary" height="28" width="28">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <div class="navbar-nav mx-auto d-none d-lg-flex align-items-center gap-1 xl-gap-3">
+                    <a class="nav-link custom-link" href="/properties">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="me-2">
+                            <rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect>
+                            <path d="M9 22v-4h6v4"></path>
+                            <path d="M8 6h.01"></path>
+                            <path d="M16 6h.01"></path>
+                            <path d="M12 6h.01"></path>
+                            <path d="M12 10h.01"></path>
+                            <path d="M12 14h.01"></path>
+                            <path d="M16 10h.01"></path>
+                            <path d="M16 14h.01"></path>
+                            <path d="M8 10h.01"></path>
+                            <path d="M8 14h.01"></path>
+                        </svg>
+                        Properties
+                    </a>
+                    <a class="nav-link custom-link" href="/services">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                            stroke-linecap="round" stroke-linejoin="round" class="me-2" height="20" width="20">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                        Services
+                    </a>
+                    <a class="nav-link custom-link" href="/about-us">About Us</a>
+                    <a class="nav-link custom-link" href="/contact-us">Contact</a>
+                </div>
+                <div class="d-none d-lg-flex align-items-center gap-3">
+                    <button class="btn btn-icon-round">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                            stroke-linecap="round" stroke-linejoin="round" class="text-icon" height="20" width="20">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                    <div class="profile-pill">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                            stroke-linecap="round" stroke-linejoin="round" class="text-green-brand" height="18"
+                            width="18">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <span>Tricityrent</span>
+                    </div>
+                </div>
+                <div class="d-lg-none mt-3 pb-3 border-top pt-3">
+                    <div class="d-flex flex-column gap-2">
+                        <a class="mobile-link" href="/properties">Properties</a>
+                        <div class="border-top my-1"></div>
+                        <a class="mobile-link" href="/services">Services</a>
+                        <div class="border-top my-1"></div>
+                        <a class="mobile-link-icon" href="/about-us">About Us</a>
+                        <a class="mobile-link-icon" href="/contact-us">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="py-5 mt-5 bg-white position-relative">
+        <div class="container py-lg-5">
+            <div class="row align-items-center g-5 min-vh-75">
+                <!-- Text Content -->
+                <div class="col-lg-6">
+                    <h1 class="display-2 fw-bold text-dark mb-4 lh-1">
+                        Our <span class="text-success d-block">Services</span>
+                    </h1>
+                    <p class="lead text-secondary mb-5 leading-relaxed">
+                        End-to-end real estate solutions designed to deliver excellence and value at every step of your
+                        journey.
+                    </p>
+                    <a href="../contact-us/index.html"
+                        class="btn btn-success btn-lg rounded-pill px-5 fw-bold shadow-sm hover-lift">
+                        Get a Free Consultation <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                </div>
+                <!-- Hero Image -->
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-4.0.3&auto=format&fit=crop&w=1280&q=80"
+                        alt="Services Hero" class="img-fluid rounded-5 shadow-lg object-fit-cover w-100"
+                        style="height: 500px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== EXPERTISE GRID ==================== -->
+    <section class="py-5 bg-light">
+        <div class="container py-lg-5">
+            <div class="row g-5">
+
+                <!-- Left Column: Service Menu -->
+                <div class="col-lg-4">
+                    <h2 class="fw-bold text-dark mb-4">Our Expertise</h2>
+
+                    <div class="d-flex flex-column gap-3">
+                        <!-- Item 1 -->
+                        <div
+                            class="service-menu-item bg-white p-4 rounded-4 border hover-border-green cursor-pointer d-flex align-items-center gap-3 transition-all">
+                            <div
+                                class="icon-box bg-success-subtle text-success rounded-3 d-flex align-items-center justify-content-center flex-shrink-0">
+                                <i class="bi bi-house-check fs-4"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-0">Property Solutions</h5>
+                                <small class="text-secondary">Buy, Sell, & Rent with Confidence</small>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div
+                            class="service-menu-item bg-white p-4 rounded-4 border hover-border-green cursor-pointer d-flex align-items-center gap-3 transition-all">
+                            <div
+                                class="icon-box bg-success-subtle text-success rounded-3 d-flex align-items-center justify-content-center flex-shrink-0">
+                                <i class="bi bi-bank fs-4"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-0">Home Financing</h5>
+                                <small class="text-secondary">Secure, Simple, and Swift Loans</small>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div
+                            class="service-menu-item bg-white p-4 rounded-4 border hover-border-green cursor-pointer d-flex align-items-center gap-3 transition-all">
+                            <div
+                                class="icon-box bg-success-subtle text-success rounded-3 d-flex align-items-center justify-content-center flex-shrink-0">
+                                <i class="bi bi-file-earmark-text fs-4"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-0">Legal & Valuation</h5>
+                                <small class="text-secondary">Clarity, Compliance, and Confidence</small>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div
+                            class="service-menu-item bg-white p-4 rounded-4 border hover-border-green cursor-pointer d-flex align-items-center gap-3 transition-all">
+                            <div
+                                class="icon-box bg-success-subtle text-success rounded-3 d-flex align-items-center justify-content-center flex-shrink-0">
+                                <i class="bi bi-hammer fs-4"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-0">Premium Renovation</h5>
+                                <small class="text-secondary">Transforming Spaces, Inspiring Lives</small>
+                            </div>
+                        </div>
+
+                        <!-- Item 5 -->
+                        <div
+                            class="service-menu-item bg-white p-4 rounded-4 border hover-border-green cursor-pointer d-flex align-items-center gap-3 transition-all">
+                            <div
+                                class="icon-box bg-success-subtle text-success rounded-3 d-flex align-items-center justify-content-center flex-shrink-0">
+                                <i class="bi bi-bricks fs-4"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-0">Construction</h5>
+                                <small class="text-secondary">From Blueprint to Reality</small>
+                            </div>
+                        </div>
+
+                        <!-- Item 6 (Active) -->
+                        <div
+                            class="service-menu-item bg-success text-white p-4 rounded-4 border border-success cursor-pointer d-flex align-items-center gap-3 shadow transition-all">
+                            <div
+                                class="icon-box bg-white bg-opacity-25 text-white rounded-3 d-flex align-items-center justify-content-center flex-shrink-0">
+                                <i class="bi bi-gem fs-4"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-0">Luxury Villas</h5>
+                                <small class="text-white-50">Bespoke, Exclusive, and Unmatched</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Featured Content -->
+                <div class="col-lg-8">
+                    <div class="bg-white rounded-5 border overflow-hidden shadow-sm h-100">
+                        <!-- Feature Image -->
+                        <div style="height: 350px;">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1280&q=80"
+                                alt="Luxury Villas" class="w-100 h-100 object-fit-cover">
+                        </div>
+
+                        <!-- Content -->
+                        <div class="p-5">
+                            <h2 class="fw-bold text-dark mb-4">Luxury Villas on Demand</h2>
+                            <p class="text-secondary leading-relaxed mb-5">
+                                Experience the pinnacle of luxury living with our 'Villas on Demand' service. We handle
+                                everything from prime location scouting to custom design and premium construction,
+                                delivering an exclusive villa tailored perfectly to your lifestyle and vision.
+                            </p>
+
+                            <!-- Features List -->
+                            <div class="row g-4 mb-5">
+                                <div class="col-md-6 d-flex gap-3">
+                                    <i class="bi bi-check-circle-fill text-success fs-5 mt-1"></i>
+                                    <span class="text-secondary fs-5">Prime Location Scouting</span>
+                                </div>
+                                <div class="col-md-6 d-flex gap-3">
+                                    <i class="bi bi-check-circle-fill text-success fs-5 mt-1"></i>
+                                    <span class="text-secondary fs-5">Custom Architecture</span>
+                                </div>
+                                <div class="col-md-6 d-flex gap-3">
+                                    <i class="bi bi-check-circle-fill text-success fs-5 mt-1"></i>
+                                    <span class="text-secondary fs-5">Premium Construction</span>
+                                </div>
+                                <div class="col-md-6 d-flex gap-3">
+                                    <i class="bi bi-check-circle-fill text-success fs-5 mt-1"></i>
+                                    <span class="text-secondary fs-5">On-Time Possession</span>
+                                </div>
+                            </div>
+
+                            <a href="/contact-us" class="btn btn-success rounded-pill px-5 py-3 fw-bold hover-lift">
+                                Explore Villas <i class="bi bi-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== QUOTE SECTION ==================== -->
+    <section class="py-5 bg-white">
+        <div class="container py-lg-5 text-center">
+            <div class="mb-4 text-success">
+                <i class="bi bi-quote display-3"></i>
+            </div>
+            <figure class="mx-auto" style="max-width: 800px;">
+                <blockquote class="blockquote">
+                    <p class="display-6 fw-bold text-dark mb-4">
+                        "Everyone wants a piece of land. It's the only sure investment. It can never depreciate like a
+                        car or washing machine. Land will only double its value in ten years."
+                    </p>
+                </blockquote>
+                <figcaption class="blockquote-footer fs-5 mt-2">
+                    Sam Shepard
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- ==================== CTA SECTION ==================== -->
+    <section class="py-5 bg-dark text-white">
+        <div class="container py-lg-5 text-center">
+            <h2 class="display-4 fw-bold mb-4">Start Your Real Estate Journey</h2>
+            <p class="text-white-50 lead mb-5 mx-auto" style="max-width: 700px;">
+                Our experts are ready to provide personalized solutions and guide you every step of the way.
+            </p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                <a href="../contact-us/index.html" class="btn btn-success btn-lg rounded-pill px-5 fw-bold hover-lift">
+                    <i class="bi bi-envelope me-2"></i> Contact Our Experts
+                </a>
+                <a href="#" class="btn btn-outline-light btn-lg rounded-pill px-5 fw-bold hover-lift">
+                    Browse Properties <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer-section">
+        <div class="container">
+
+
+            <!-- Middle Section: Links -->
+            <div class="row g-4">
+
+                <!-- Column 1: About -->
+                <div class="col-lg-4 col-md-2">
+                    <h6 class="footer-heading">About Us</h6>
+                    <p class="text-white-50 small leading-loose mb-1">
+                        We are India's most trusted platform for renting homes, flats, and commercial spaces. Our
+                        mission is to make moving hassle-free and secure.
+                    </p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links (Col-6 on mobile for side-by-side) -->
+                <div class="col-6 col-lg-2 col-md-3">
+                    <h6 class="footer-heading">Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/" class="footer-link">Home</a></li>
+                        <li><a href="/about-us" class="footer-link">About Us</a></li>
+                        <li><a href="/properties" class="footer-link">Properties</a></li>
+                        <li><a href="/contact-us/" class="footer-link">Contact</a></li>
+                </div>
+
+                <!-- Column 3: Rentals (Col-6 on mobile) -->
+                <div class="col-6 col-lg-2 col-md-3">
+                    <h6 class="footer-heading">Rentals</h6>
+                    <ul class="list-unstyled">
+  <li><a href="/Apartments" class="footer-link">Apartments</a></li>
+                        <li><a href="/Villas" class="footer-link">Villas</a></li>
+                        <li><a href="/Offices" class="footer-link">Offices</a></li>
+                        <li><a href="/PG_House" class="footer-link">PG / Hostel</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact Info -->
+                <div class="col-lg-4 col-md-12">
+                    <h6 class="footer-heading">Contact</h6>
+                    <ul class="list-unstyled text-white-50 small">
+                        <!-- <li class="mb-3 d-flex gap-3">
+                            <i class="bi bi-geo-alt-fill text-success"></i>
+                            <span>123 Market Road, Mohali, Punjab, India 160055</span>
+                        </li> -->
+                        <li class="mb-3 d-flex gap-3">
+                            <i class="bi bi-envelope-fill text-success"></i>
+                            <a href="mailto:tricity0rent@gmail.com"
+                                class="text-white-50 text-decoration-none">tricity0rent@gmail.com</a>
+                        </li>
+                        <li class="mb-3 d-flex gap-3">
+                            <i class="bi bi-telephone-fill text-success"></i>
+                            <span>+91 8360769451</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Section: Copyright -->
+            <div class="row mt-5 pt-3 border-top border-secondary border-opacity-10">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-white-50 mb-0">&copy; 2025 Tricityrent. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <a href="/legal/privacy" class="text-white-50 text-decoration-none small me-3 footer-bottom-link">Privacy
+                        Policy</a>
+                    <a href="/legal/terms" class="text-white-50 text-decoration-none small footer-bottom-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

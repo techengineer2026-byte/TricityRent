@@ -1,0 +1,334 @@
+{
+    "PG004": {
+        "id": "PG004",
+        "title": "Comfortable PG for Boys - Sector 17",
+        "type": "PG",
+        "category": "Boys",
+        "occupancy": "Double Sharing",
+        "status": "Available",
+        "location": {
+            "sector": "Sector 17",
+            "city": "Chandigarh"
+        },
+        "price": "₹7,500 / mo",
+        "amenities": [
+            "Wi-Fi",
+            "Food",
+            "AC",
+            "Gym"
+        ],
+        "images": [
+            "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80"
+        ]
+    },
+    "PG005": {
+        "id": "PG005",
+        "title": "Exclusive PG for Girls - Sector 9",
+        "type": "PG",
+        "category": "Girls",
+        "occupancy": "Single Room",
+        "status": "Available",
+        "location": {
+            "sector": "Sector 9",
+            "city": "Chandigarh"
+        },
+        "price": "₹10,000 / mo",
+        "amenities": [
+            "Security",
+            "Meals",
+            "Geyser",
+            "Laundry"
+        ],
+        "images": [
+            "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
+        ]
+    },
+    "FL002": {
+        "id": "FL002",
+        "title": "Spacious 2 BHK Apartment",
+        "type": "Apartment",
+        "category": "2 BHK",
+        "occupancy": "Family",
+        "status": "For Rent",
+        "location": {
+            "sector": "Sector 35",
+            "city": "Chandigarh"
+        },
+        "price": "₹20,000 / mo",
+        "amenities": [
+            "Fully Furnished",
+            "Car Parking",
+            "Balcony",
+            "Power Backup"
+        ],
+        "images": [
+            "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+        ]
+    },
+    "PG006": {
+        "id": "PG006",
+        "title": "Affordable PG for Boys - Sector 11",
+        "type": "PG",
+        "category": "Boys",
+        "occupancy": "Triple Sharing",
+        "status": "Available",
+        "location": {
+            "sector": "Sector 11",
+            "city": "Chandigarh"
+        },
+        "price": "₹5,500 / mo",
+        "amenities": [
+            "Wi-Fi",
+            "RO Water",
+            "Cooler",
+            "Common TV"
+        ],
+        "images": [
+            "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=800&q=80"
+        ]
+    },
+    "PG007": {
+        "id": "PG007",
+        "title": "Luxury PG for Girls - Sector 21",
+        "type": "PG",
+        "category": "Girls",
+        "occupancy": "Double Sharing",
+        "status": "Available",
+        "location": {
+            "sector": "Sector 21",
+            "city": "Chandigarh"
+        },
+        "price": "₹9,000 / mo",
+        "amenities": [
+            "Wi-Fi",
+            "Food",
+            "AC",
+            "Gym",
+            "Laundry"
+        ],
+        "images": [
+            "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=800&q=80"
+        ]
+    },
+    "FL003": {
+        "id": "FL003",
+        "title": "Modern 1 BHK Flat in Mohali",
+        "type": "Apartment",
+        "category": "1 BHK",
+        "occupancy": "Bachelors",
+        "status": "For Rent",
+        "location": {
+            "sector": "Phase 3B2",
+            "city": "Mohali"
+        },
+        "price": "₹14,000 / mo",
+        "amenities": [
+            "Semi-Furnished",
+            "Car Parking",
+            "Balcony",
+            "Security"
+        ],
+        "images": [
+            "https://images.unsplash.com/photo-1522771753035-0a1539503ed5?auto=format&fit=crop&w=800&q=80"
+        ]
+    },
+    "PG008": {
+        "id": "PG008",
+        "title": "Budget PG for Boys - Sector 8",
+        "type": "PG",
+        "category": "Boys",
+        "occupancy": "Quadruple Sharing",
+        "status": "Available",
+        "location": {
+            "sector": "Sector 8",
+            "city": "Chandigarh"
+        },
+        "price": "₹4,500 / mo",
+        "amenities": [
+            "Wi-Fi",
+            "RO Water",
+            "Cooler"
+        ],
+        "images": [
+            "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80"
+        ]
+    },
+    "PG009": {
+        "id": "PG009",
+        "title": "Premium PG for Girls in Mohali",
+        "type": "PG",
+        "category": "Girls",
+        "occupancy": "Single Room",
+        "status": "Available",
+        "location": {
+            "sector": "Phase 7",
+            "city": "Mohali"
+        },
+        "price": "₹11,500 / mo",
+        "amenities": [
+            "Security",
+            "Meals",
+            "Geyser",
+            "Power Backup",
+            "Laundry"
+        ],
+        "images": [
+            "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
+        ]
+    },
+    "FL004": {
+        "id": "FL004",
+        "title": "Cozy 3 BHK Villa",
+        "type": "Apartment",
+        "category": "3 BHK",
+        "occupancy": "Family",
+        "status": "For Rent",
+        "location": {
+            "sector": "Sector 44",
+            "city": "Chandigarh"
+        },
+        "price": "₹25,000 / mo",
+        "amenities": [
+            "Fully Furnished",
+            "Car Parking",
+            "Garden",
+            "Power Backup"
+        ],
+        "images": [
+            "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+        ]
+    },
+    "PG010": {
+        "id": "PG010",
+        "title": "Standard PG for Boys - Sector 19",
+        "type": "PG",
+        "category": "Boys",
+        "occupancy": "Double Sharing",
+        "status": "Available",
+        "location": {
+            "sector": "Sector 19",
+            "city": "Chandigarh"
+        },
+        "price": "₹6,800 / mo",
+        "amenities": [
+            "Wi-Fi",
+            "Food",
+            "AC"
+        ],
+        "images": [
+            "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=800&q=80"
+        ]
+    },
+    "PG011": {
+        "id": "PG011",
+        "title": "Elegant PG for Girls - Sector 23",
+        "type": "PG",
+        "category": "Girls",
+        "occupancy": "Single Room",
+        "status": "Available",
+        "location": {
+            "sector": "Sector 23",
+            "city": "Chandigarh"
+        },
+        "price": "₹13,000 / mo",
+        "amenities": [
+            "Security",
+            "Meals",
+            "Geyser",
+            "Gym",
+            "Laundry"
+        ],
+        "images": [
+            "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=800&q=80"
+        ]
+    },
+    "FL005": {
+        "id": "FL005",
+        "title": "Budget 1 BHK in Mohali",
+        "type": "Apartment",
+        "category": "1 BHK",
+        "occupancy": "Bachelors / Family",
+        "status": "For Rent",
+        "location": {
+            "sector": "Phase 5",
+            "city": "Mohali"
+        },
+        "price": "₹12,500 / mo",
+        "amenities": [
+            "Semi-Furnished",
+            "Car Parking",
+            "Balcony"
+        ],
+        "images": [
+            "https://images.unsplash.com/photo-1522771753035-0a1539503ed5?auto=format&fit=crop&w=800&q=80"
+        ]
+    },
+    "PG012": {
+        "id": "PG012",
+        "title": "Value PG for Boys - Sector 7",
+        "type": "PG",
+        "category": "Boys",
+        "occupancy": "Triple Sharing",
+        "status": "Available",
+        "location": {
+            "sector": "Sector 7",
+            "city": "Chandigarh"
+        },
+        "price": "₹5,200 / mo",
+        "amenities": [
+            "Wi-Fi",
+            "RO Water",
+            "Cooler",
+            "Common Area"
+        ],
+        "images": [
+            "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80"
+        ]
+    },
+    "PG013": {
+        "id": "PG013",
+        "title": "High-End PG for Girls in Mohali",
+        "type": "PG",
+        "category": "Girls",
+        "occupancy": "Double Sharing",
+        "status": "Available",
+        "location": {
+            "sector": "Phase 10",
+            "city": "Mohali"
+        },
+        "price": "₹14,500 / mo",
+        "amenities": [
+            "Security",
+            "Meals",
+            "Geyser",
+            "Power Backup",
+            "Gym"
+        ],
+        "images": [
+            "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
+        ]
+    },
+    "FL006": {
+        "id": "FL006",
+        "title": "Luxurious 2 BHK Penthouse",
+        "type": "Apartment",
+        "category": "2 BHK",
+        "occupancy": "Family / Bachelors",
+        "status": "For Rent",
+        "location": {
+            "sector": "Sector 38",
+            "city": "Chandigarh"
+        },
+        "price": "₹22,000 / mo",
+        "amenities": [
+            "Fully Furnished",
+            "Car Parking",
+            "Balcony",
+            "Security",
+            "Power Backup"
+        ],
+        "images": [
+            "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+        ]
+    }
+}

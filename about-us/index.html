@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - TriCityRent</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+
+    <!-- Custom CSS (Linking up one level) -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <!-- ==================== MOBILE BOTTOM NAVIGATION ==================== -->
+    <!-- Added ID: mobileBottomNav -->
+    <div id="mobileBottomNav" class="fixed-bottom d-block d-lg-none z-3 pb-3 px-3 transition-nav">
+        <div class="mobile-nav-container shadow-lg border">
+            <div class="d-flex justify-content-between align-items-center">
+
+                <a href="/" class="mobile-nav-item ">
+                    <i class="bi bi-house"></i>
+                    <span>Home</span>
+                </a>
+
+                <a href="/properties" class="mobile-nav-item">
+                    <i class="bi bi-building"></i>
+                    <span>Property</span>
+                </a>
+
+                <a href="/contact-us" class="mobile-nav-item">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>Contact</span>
+                </a>
+
+                <a href="/about-us" class="mobile-nav-item active">
+                    <i class="bi bi-info-circle"></i>
+                    <span>About</span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <header class="navbar navbar-expand-lg fixed-top bg-white border-bottom transition-all" id="mainNavbar">
+        <div class="container-xl">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <div class="position-relative">
+                    <img src="../assets/images/Logo1.png" alt="HouseHunt" class="navbar-logo object-fit-contain">
+                </div>
+            </a>
+            <button class="navbar-toggler border-0 p-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent">
+                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                    stroke-linejoin="round" class="text-secondary" height="28" width="28">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <div class="navbar-nav mx-auto d-none d-lg-flex align-items-center gap-1 xl-gap-3">
+                    <a class="nav-link custom-link" href="/properties">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="me-2">
+                            <rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect>
+                            <path d="M9 22v-4h6v4"></path>
+                            <path d="M8 6h.01"></path>
+                            <path d="M16 6h.01"></path>
+                            <path d="M12 6h.01"></path>
+                            <path d="M12 10h.01"></path>
+                            <path d="M12 14h.01"></path>
+                            <path d="M16 10h.01"></path>
+                            <path d="M16 14h.01"></path>
+                            <path d="M8 10h.01"></path>
+                            <path d="M8 14h.01"></path>
+                        </svg>
+                        Properties
+                    </a>
+                    <a class="nav-link custom-link" href="/services">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                            stroke-linecap="round" stroke-linejoin="round" class="me-2" height="20" width="20">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                        Services
+                    </a>
+                    <a class="nav-link custom-link" href="/about-us">About Us</a>
+                    <a class="nav-link custom-link" href="/contact-us">Contact</a>
+                </div>
+                <div class="d-none d-lg-flex align-items-center gap-3">
+                    <button class="btn btn-icon-round">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                            stroke-linecap="round" stroke-linejoin="round" class="text-icon" height="20" width="20">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                    <div class="profile-pill">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                            stroke-linecap="round" stroke-linejoin="round" class="text-green-brand" height="18"
+                            width="18">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <span>Tricityrent</span>
+                    </div>
+                </div>
+                <div class="d-lg-none mt-3 pb-3 border-top pt-3">
+                    <div class="d-flex flex-column gap-2">
+                        <a class="mobile-link" href="/properties">Properties</a>
+                        <div class="border-top my-1"></div>
+                        <a class="mobile-link" href="/services">Services</a>
+                        <div class="border-top my-1"></div>
+                        <a class="mobile-link-icon" href="/about-us">About Us</a>
+                        <a class="mobile-link-icon" href="/contact-us">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ==================== BREADCRUMB AREA ==================== -->
+    <section class="breadcrumb-area d-flex align-items-center justify-content-center text-center">
+        <div class="container position-relative z-2">
+            <h1 class="display-4 fw-bold text-white mb-3">About Us</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center bg-transparent p-0 m-0">
+                    <li class="breadcrumb-item"><a href="../index.html"
+                            class="text-white text-decoration-none opacity-75">Home</a></li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">About Us</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="breadcrumb-overlay"></div>
+    </section>
+
+    <!-- ==================== MAIN TEXT CONTENT ==================== -->
+    <section class="py-5 bg-white">
+        <div class="container py-lg-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-9">
+                    <div class="about-content text-center">
+                        <h2 class="fw-bold text-dark mb-4">About TriCityRent</h2>
+
+                        <p class="lead-text mb-4">
+                            <strong>TriCityRent</strong> is a trusted rental platform helping people find the right
+                            homes and commercial spaces across Chandigarh, Mohali, and Panchkula. We simplify the rental
+                            journey by connecting tenants with verified properties and reliable owners — quickly,
+                            transparently, and hassle-free.
+                        </p>
+
+                        <p class="text-secondary mb-4 leading-relaxed">
+                            <strong>We understand</strong> that renting is more than just finding a place; it’s about
+                            choosing a space that fits your lifestyle, work, and future plans. That’s why TriCityRent
+                            offers a curated selection of rental options, including apartments, independent houses, and
+                            office spaces, tailored to diverse needs and budgets.
+                        </p>
+
+                        <p class="text-secondary mb-4 leading-relaxed">
+                            <strong>What sets us apart</strong> is our local expertise. With deep knowledge of the
+                            Tricity real estate market, we help renters make informed decisions and discover properties
+                            in the right locations — without unnecessary delays or hidden complications.
+                        </p>
+
+                        <p class="text-secondary mb-4 leading-relaxed">
+                            <strong>At TriCityRent</strong>, transparency and trust come first. Our team supports you
+                            throughout the process, from property discovery to final move-in, ensuring a smooth and
+                            stress-free experience.
+                        </p>
+
+                        <p class="text-secondary mb-0 leading-relaxed">
+                            <strong>Whether you’re searching</strong> for a home or a workspace in Tricity, TriCityRent
+                            is your reliable rental partner.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== NEWSLETTER / INQUIRY FORM ==================== -->
+    <section class="newsletter-area py-5 position-relative">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-10">
+                    <div class="newsletter-content text-center text-white">
+
+                        <div class="mb-4">
+                            <span class="text-uppercase fw-bold text-warning small tracking-wider">Quick Inquiry</span>
+                            <h2 class="fw-bold mt-2">Have questions? We are glad to consult you as soon as possible</h2>
+                        </div>
+
+                        <!-- Inquiry Form -->
+                        <form class="newsletter-form mt-5">
+                            <div class="row g-3 justify-content-center">
+                                <div class="col-md-5">
+                                    <input type="text" class="form-control form-control-lg rounded-pill px-4"
+                                        placeholder="Your name" required>
+                                </div>
+                                <div class="col-md-5">
+                                    <input type="email" class="form-control form-control-lg rounded-pill px-4"
+                                        placeholder="Your email" required>
+                                </div>
+                                <div class="col-md-2">
+                                    <button type="submit"
+                                        class="btn btn-warning btn-lg rounded-pill w-100 fw-bold text-dark">Submit</button>
+                                </div>
+                            </div>
+
+                            <div class="form-check d-inline-block mt-4 text-start">
+                                <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                                <label class="form-check-label text-white-50 small" for="termsCheck">
+                                    I accept <a href="#" class="text-white text-decoration-underline">Terms &
+                                        Conditions</a> for processing personal data
+                                </label>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <!-- (Include the Footer code I gave you previously here) -->
+    <footer class="footer-section">
+        <div class="container">
+
+
+            <!-- Middle Section: Links -->
+            <div class="row g-4">
+
+                <!-- Column 1: About -->
+                <div class="col-lg-4 col-md-2">
+                    <h6 class="footer-heading">About Us</h6>
+                    <p class="text-white-50 small leading-loose mb-1">
+                        We are India's most trusted platform for renting homes, flats, and commercial spaces. Our
+                        mission is to make moving hassle-free and secure.
+                    </p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links (Col-6 on mobile for side-by-side) -->
+                <div class="col-6 col-lg-2 col-md-3">
+                    <h6 class="footer-heading">Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/" class="footer-link">Home</a></li>
+                        <li><a href="/about-us" class="footer-link">About Us</a></li>
+                        <li><a href="/properties" class="footer-link">Properties</a></li>
+                        <li><a href="/contact-us/" class="footer-link">Contact</a></li>
+                </div>
+
+                <!-- Column 3: Rentals (Col-6 on mobile) -->
+                <div class="col-6 col-lg-2 col-md-3">
+                    <h6 class="footer-heading">Rentals</h6>
+                    <ul class="list-unstyled">
+  <li><a href="/Apartments" class="footer-link">Apartments</a></li>
+                        <li><a href="/Villas" class="footer-link">Villas</a></li>
+                        <li><a href="/Offices" class="footer-link">Offices</a></li>
+                        <li><a href="/PG_House" class="footer-link">PG / Hostel</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact Info -->
+                <div class="col-lg-4 col-md-12">
+                    <h6 class="footer-heading">Contact</h6>
+                    <ul class="list-unstyled text-white-50 small">
+                        <!-- <li class="mb-3 d-flex gap-3">
+                            <i class="bi bi-geo-alt-fill text-success"></i>
+                            <span>123 Market Road, Mohali, Punjab, India 160055</span>
+                        </li> -->
+                        <li class="mb-3 d-flex gap-3">
+                            <i class="bi bi-envelope-fill text-success"></i>
+                            <a href="mailto:tricity0rent@gmail.com"
+                                class="text-white-50 text-decoration-none">tricity0rent@gmail.com</a>
+                        </li>
+                        <li class="mb-3 d-flex gap-3">
+                            <i class="bi bi-telephone-fill text-success"></i>
+                            <span>+91 8360769451</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Section: Copyright -->
+            <div class="row mt-5 pt-3 border-top border-secondary border-opacity-10">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-white-50 mb-0">&copy; 2025 Tricityrent. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <a href="/legal/privacy" class="text-white-50 text-decoration-none small me-3 footer-bottom-link">Privacy
+                        Policy</a>
+                    <a href="/legal/terms" class="text-white-50 text-decoration-none small footer-bottom-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

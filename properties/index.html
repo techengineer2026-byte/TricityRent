@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties - TricityRent</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS (Linking up one level) -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <style>
+        /* Page Specific Styles */
+        .filter-bar {
+            background: white;
+            border-bottom: 1px solid #e5e7eb;
+            position: sticky;
+            top: 76px;
+            /* Below Navbar */
+            z-index: 900;
+        }
+
+        .property-img-height {
+            height: 250px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <header class="navbar navbar-expand-lg fixed-top bg-white border-bottom transition-all" id="mainNavbar">
+        <div class="container-xl">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <div class="position-relative">
+                    <img src="../assets/images/Logo1.png" alt="HouseHunt" class="navbar-logo object-fit-contain">
+                </div>
+            </a>
+            <button class="navbar-toggler border-0 p-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent">
+                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                    stroke-linejoin="round" class="text-secondary" height="28" width="28">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <div class="navbar-nav mx-auto d-none d-lg-flex align-items-center gap-1 xl-gap-3">
+                    <a class="nav-link custom-link" href="/properties">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="me-2">
+                            <rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect>
+                            <path d="M9 22v-4h6v4"></path>
+                            <path d="M8 6h.01"></path>
+                            <path d="M16 6h.01"></path>
+                            <path d="M12 6h.01"></path>
+                            <path d="M12 10h.01"></path>
+                            <path d="M12 14h.01"></path>
+                            <path d="M16 10h.01"></path>
+                            <path d="M16 14h.01"></path>
+                            <path d="M8 10h.01"></path>
+                            <path d="M8 14h.01"></path>
+                        </svg>
+                        Properties
+                    </a>
+                    <a class="nav-link custom-link" href="/services">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                            stroke-linecap="round" stroke-linejoin="round" class="me-2" height="20" width="20">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                        Services
+                    </a>
+                    <a class="nav-link custom-link" href="/about-us">About Us</a>
+                    <a class="nav-link custom-link" href="/contact-us">Contact</a>
+                </div>
+                <div class="d-none d-lg-flex align-items-center gap-3">
+                    <button class="btn btn-icon-round">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                            stroke-linecap="round" stroke-linejoin="round" class="text-icon" height="20" width="20">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                    <div class="profile-pill">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                            stroke-linecap="round" stroke-linejoin="round" class="text-green-brand" height="18"
+                            width="18">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <span>Tricityrent</span>
+                    </div>
+                </div>
+                <div class="d-lg-none mt-3 pb-3 border-top pt-3">
+                    <div class="d-flex flex-column gap-2">
+                        <a class="mobile-link" href="/properties">Properties</a>
+                        <div class="border-top my-1"></div>
+                        <a class="mobile-link" href="/services">Services</a>
+                        <div class="border-top my-1"></div>
+                        <a class="mobile-link-icon" href="/about-us">About Us</a>
+                        <a class="mobile-link-icon" href="/contact-us">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="py-5 mt-5 bg-green-subtle">
+        <div class="container py-lg-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h1 class="display-3 fw-bold text-dark mb-4 lh-1">
+                        Find Your <span class="text-success d-block">Dream Property <br>in Tricity</span>
+                    </h1>
+                    <p class="lead text-secondary mb-0 leading-relaxed">
+                        Explore curated, verified properties across Chandigarh, Mohali, and Panchkula. From apartments to office spaces, find the perfect property that fits your lifestyle and needs.
+                    </p>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="https://images.unsplash.com/photo-1599809275671-b5942cabc7a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1280&q=80"
+                        alt="Dream Property" class="img-fluid rounded-5 shadow-lg object-fit-cover w-100"
+                        style="height: 400px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FILTER BAR ==================== -->
+    <div class="filter-bar py-3 shadow-sm">
+        <div class="container">
+            <form action="#" class="row g-3 align-items-center">
+
+                <!-- Search -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-text bg-light border-end-0 rounded-start-pill ps-3">
+                            <i class="bi bi-search text-secondary"></i>
+                        </span>
+                        <input type="text" class="form-control bg-light border-start-0 rounded-end-pill py-2"
+                            placeholder="Search by location or name...">
+                    </div>
+                </div>
+
+                <!-- Type -->
+                <div class="col-lg-2 col-md-3 col-6">
+                    <select class="form-select rounded-pill py-2">
+                        <option value="all">All Types</option>
+                        <option value="Apartment">Apartment</option>
+                        <option value="Villa">Villa</option>
+                        <option value="Commercial">Commercial</option>
+                    </select>
+                </div>
+
+                <!-- Beds -->
+                <div class="col-lg-2 col-md-3 col-6">
+                    <select class="form-select rounded-pill py-2">
+                        <option value="all">Any Beds</option>
+                        <option value="1">1 BHK</option>
+                        <option value="2">2 BHK</option>
+                        <option value="3">3 BHK</option>
+                    </select>
+                </div>
+
+                <!-- Price Range -->
+                <div class="col-lg-2 col-md-6">
+                    <label for="priceRange"
+                        class="form-label small fw-bold mb-0 text-secondary w-100 d-flex justify-content-between">
+                        <span>Max Price</span> <span class="text-success">₹5 Cr</span>
+                    </label>
+                    <input type="range" class="form-range" id="priceRange" min="0" max="500" step="5">
+                </div>
+
+                <!-- Sort -->
+                <div class="col-lg-2 col-md-6">
+                    <select class="form-select rounded-pill py-2 bg-white text-end border-0 fw-bold text-success">
+                        <option value="newest">Newest First</option>
+                        <option value="low-high">Price: Low to High</option>
+                        <option value="high-low">Price: High to Low</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ==================== PROPERTY LIST SECTION ==================== -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="d-flex align-items-end justify-content-between mb-4 border-bottom pb-3">
+                <div>
+                    <h2 class="fw-bold text-dark mb-0">Properties in All Locations</h2>
+                    <span class="text-secondary small">3 Properties Found</span>
+                </div>
+            </div>
+
+            <!-- DYNAMIC CONTENT CONTAINER -->
+            <div id="property-list-container">
+                <!-- JavaScript will inject content here -->
+                <div class="text-center py-5">
+                    <div class="spinner-border text-success" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==================== MOBILE BOTTOM NAVIGATION ==================== -->
+    <!-- ID 'mobileBottomNav' is crucial for the fade script -->
+    <div id="mobileBottomNav" class="fixed-bottom d-block d-lg-none z-3 pb-3 px-3 transition-nav">
+        <div class="mobile-nav-container shadow-lg border">
+            <div class="d-flex justify-content-between align-items-center">
+
+                <a href="../index.html" class="mobile-nav-item">
+                    <i class="bi bi-house"></i>
+                    <span>Home</span>
+                </a>
+
+                <a href="#" class="mobile-nav-item active">
+                    <i class="bi bi-building"></i>
+                    <span>Property</span>
+                </a>
+
+                <a href="../contact-us/index.html" class="mobile-nav-item">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>Contact</span>
+                </a>
+
+                <a href="../about-us/index.html" class="mobile-nav-item">
+                    <i class="bi bi-info-circle"></i>
+                    <span>About</span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer-section bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-12">
+                    <h6 class="footer-heading">About Us</h6>
+                    <p class="text-white-50 small leading-loose mb-4">
+                        We are India's most trusted platform for renting homes, flats, and commercial spaces. Our
+                        mission is to make moving hassle-free and secure.
+                    </p>
+                </div>
+                <div class="col-6 col-lg-2 col-md-6">
+                    <h6 class="footer-heading">Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/" class="footer-link">Home</a></li>
+                        <li><a href="/about-us" class="footer-link">About Us</a></li>
+                        <li><a href="/properties" class="footer-link">Properties</a></li>
+                        <li><a href="/contact-us/" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 col-md-6">
+                    <h6 class="footer-heading">Rentals</h6>
+                    <ul class="list-unstyled">
+  <li><a href="/Apartments" class="footer-link">Apartments</a></li>
+                        <li><a href="/Villas" class="footer-link">Villas</a></li>
+                        <li><a href="/Offices" class="footer-link">Offices</a></li>
+                        <li><a href="/PG_House" class="footer-link">PG / Hostel</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <h6 class="footer-heading">Contact</h6>
+                    <ul class="list-unstyled text-white-50 small">
+                        <li class="mb-3 d-flex gap-3">
+                            <i class="bi bi-envelope-fill text-success"></i>
+                            <a href="mailto:tricity0rent@gmail.com"
+                                class="text-white-50 text-decoration-none">tricity0rent@gmail.com</a>
+                        </li>
+                        <li class="mb-3 d-flex gap-3">
+                            <i class="bi bi-telephone-fill text-success"></i>
+                            <span>+91 8360769451</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-5 pt-3 border-top border-secondary border-opacity-10">
+                <div class="col-12 text-center text-white-50 small">
+                    &copy; 2025 Tricityrent. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

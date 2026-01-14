@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - HouseHunt</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+
+    <!-- Custom CSS (Linking up one level) -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <!-- ==================== MOBILE BOTTOM NAVIGATION ==================== -->
+    <!-- Added ID: mobileBottomNav -->
+    <div id="mobileBottomNav" class="fixed-bottom d-block d-lg-none z-3 pb-3 px-3 transition-nav">
+        <div class="mobile-nav-container shadow-lg border">
+            <div class="d-flex justify-content-between align-items-center">
+
+                <a href="/" class="mobile-nav-item ">
+                    <i class="bi bi-house"></i>
+                    <span>Home</span>
+                </a>
+
+                <a href="/properties" class="mobile-nav-item">
+                    <i class="bi bi-building"></i>
+                    <span>Property</span>
+                </a>
+
+                <a href="/contact-us" class="mobile-nav-item active">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>Contact</span>
+                </a>
+
+                <a href="/about-us" class="mobile-nav-item">
+                    <i class="bi bi-info-circle"></i>
+                    <span>About</span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <!-- ==================== NAVBAR ==================== -->
+    <header class="navbar navbar-expand-lg fixed-top bg-white border-bottom transition-all" id="mainNavbar">
+        <div class="container-xl">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <div class="position-relative">
+                    <img src="../assets/images/Logo1.png" alt="HouseHunt" class="navbar-logo object-fit-contain">
+                </div>
+            </a>
+            <button class="navbar-toggler border-0 p-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent">
+                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                    stroke-linejoin="round" class="text-secondary" height="28" width="28">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <div class="navbar-nav mx-auto d-none d-lg-flex align-items-center gap-1 xl-gap-3">
+                    <a class="nav-link custom-link" href="/properties">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="me-2">
+                            <rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect>
+                            <path d="M9 22v-4h6v4"></path>
+                            <path d="M8 6h.01"></path>
+                            <path d="M16 6h.01"></path>
+                            <path d="M12 6h.01"></path>
+                            <path d="M12 10h.01"></path>
+                            <path d="M12 14h.01"></path>
+                            <path d="M16 10h.01"></path>
+                            <path d="M16 14h.01"></path>
+                            <path d="M8 10h.01"></path>
+                            <path d="M8 14h.01"></path>
+                        </svg>
+                        Properties
+                    </a>
+                    <a class="nav-link custom-link" href="/services">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                            stroke-linecap="round" stroke-linejoin="round" class="me-2" height="20" width="20">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                        Services
+                    </a>
+                    <a class="nav-link custom-link" href="/about-us">About Us</a>
+                    <a class="nav-link custom-link" href="/contact-us">Contact</a>
+                </div>
+                <div class="d-none d-lg-flex align-items-center gap-3">
+                    <button class="btn btn-icon-round">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                            stroke-linecap="round" stroke-linejoin="round" class="text-icon" height="20" width="20">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                    <div class="profile-pill">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                            stroke-linecap="round" stroke-linejoin="round" class="text-green-brand" height="18"
+                            width="18">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <span>Tricityrent</span>
+                    </div>
+                </div>
+                <div class="d-lg-none mt-3 pb-3 border-top pt-3">
+                    <div class="d-flex flex-column gap-2">
+                        <a class="mobile-link" href="/properties">Properties</a>
+                        <div class="border-top my-1"></div>
+                        <a class="mobile-link" href="/services">Services</a>
+                        <div class="border-top my-1"></div>
+                        <a class="mobile-link-icon" href="/about-us">About Us</a>
+                        <a class="mobile-link-icon" href="/contact-us">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="py-5 mt-5 bg-green-subtle position-relative overflow-hidden">
+        <div class="container py-lg-5 position-relative z-1">
+            <div class="row align-items-center g-5">
+                <!-- Text Content -->
+                <div class="col-lg-6">
+                    <h1 class="display-3 fw-bold text-dark mb-4">
+                        Get In <span class="text-success">Touch</span>
+                    </h1>
+                    <p class="lead text-secondary mb-5 leading-relaxed">
+                        Whether you’re looking for your next home or an investment property, our TriCityRent experts are
+                        here to guide you — fast, reliable, and hassle-free. you.
+                    </p>
+                    <a href="#contact-cards" class="btn btn-success btn-lg rounded-pill px-5 fw-bold shadow-sm">
+                        Send a Message <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                </div>
+                <!-- Image -->
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&auto=format&fit=crop&w=1280&q=80"
+                            alt="Contact Support" class="img-fluid rounded-4 shadow-lg object-fit-cover"
+                            style="height: 500px; width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT CATEGORIES ==================== -->
+    <section class="py-5 bg-light" id="contact-cards">
+        <div class="container py-lg-4">
+            <div class="row g-4">
+
+                <!-- 1. General Inquiries (Green Card) -->
+                <div class="col-md-4">
+                    <div class="card h-100 bg-success text-white border-0 rounded-4 p-4 shadow-sm hover-lift">
+                        <div class="card-body">
+                            <div class="icon-box bg-white bg-opacity-25 text-white mb-4 rounded-3 d-flex align-items-center justify-content-center"
+                                style="width: 64px; height: 64px;">
+                                <i class="bi bi-envelope fs-2"></i>
+                            </div>
+                            <h3 class="h4 fw-bold mb-3">General Inquiries</h3>
+                            <p class="text-white-50 mb-4">Email us for general questions and information</p>
+                            <div>
+                                <p class="fw-bold mb-1">tricity0rent@gmail.com</p>
+                                <small class="text-white-50">Within 24 hours</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Property Sales (White Card) -->
+                <div class="col-md-4">
+                    <div class="card h-100 bg-white border-0 rounded-4 p-4 shadow-sm hover-border-green hover-lift">
+                        <div class="card-body">
+                            <div class="icon-box bg-success-subtle text-success mb-4 rounded-3 d-flex align-items-center justify-content-center"
+                                style="width: 64px; height: 64px;">
+                                <i class="bi bi-house-check fs-2"></i>
+                            </div>
+                            <h3 class="h4 fw-bold mb-3">Property Sales</h3>
+                            <p class="text-secondary mb-4">Speak directly with our sales team</p>
+                            <div>
+                                <p class="fw-bold text-success mb-1">+91 8360769451</p>
+                                <small class="text-secondary">Mon-Sat, 9 AM - 7 PM</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Instant Support (White Card) -->
+                <div class="col-md-4">
+                    <div class="card h-100 bg-white border-0 rounded-4 p-4 shadow-sm hover-border-green hover-lift">
+                        <div class="card-body">
+                            <div class="icon-box bg-success-subtle text-success mb-4 rounded-3 d-flex align-items-center justify-content-center"
+                                style="width: 64px; height: 64px;">
+                                <i class="bi bi-whatsapp fs-2"></i>
+                            </div>
+                            <h3 class="h4 fw-bold mb-3">Instant Support</h3>
+                            <p class="text-secondary mb-4">Get immediate assistance via WhatsApp</p>
+                            <div>
+                                <p class="fw-bold text-success mb-1">+91 8360769451</p>
+                                <small class="text-secondary">Real-time support</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT INFO GRID ==================== -->
+    <section class="py-5 bg-white">
+        <div class="container py-lg-4">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-dark mb-3">Contact Information</h2>
+                <div class="divider-green mx-auto"></div>
+            </div>
+
+            <div class="row g-4 text-center">
+                <!-- Office -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-3">
+                        <div class="icon-circle bg-success-subtle text-success mx-auto mb-4">
+                            <i class="bi bi-geo-alt fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Our Office</h4>
+                        <p class="text-secondary small">4th Floor, R&R Tower, Sector 74, Mohali, Punjab</p>
+                    </div>
+                </div>
+                <!-- Hours -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-3">
+                        <div class="icon-circle bg-success-subtle text-success mx-auto mb-4">
+                            <i class="bi bi-clock fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Open Hours</h4>
+                        <p class="text-secondary small">Mon to Sat: 9.30 AM - 6 PM<br>Sunday: Holiday</p>
+                    </div>
+                </div>
+                <!-- Email -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-3">
+                        <div class="icon-circle bg-success-subtle text-success mx-auto mb-4">
+                            <i class="bi bi-envelope fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Email Us</h4>
+                        <p class="text-secondary small">tricity0rent@gmail.com</p>
+                    </div>
+                </div>
+                <!-- Call -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-3">
+                        <div class="icon-circle bg-success-subtle text-success mx-auto mb-4">
+                            <i class="bi bi-telephone fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Call Us</h4>
+                        <p class="text-secondary small">+91 (836) 076 - 9451</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==================== CONTACT FORM SECTION ==================== -->
+    <section id="contact-form" class="py-5 section-contact-green">
+        <div class="container py-lg-5">
+
+            <!-- Section Header -->
+            <div class="text-center mb-5 text-white">
+                <h2 class="display-4 fw-bold mb-4">Send Us a Message</h2>
+                <div class="divider-white mx-auto mb-4"></div>
+                <p class="lead text-green-100 mx-auto" style="max-width: 700px;">
+                    Fill out the form below and our real estate experts will get back to you within 24 hours.
+                </p>
+            </div>
+
+            <div class="row g-4 g-lg-5">
+
+                <!-- Left Column: The Form -->
+                <div class="col-lg-6">
+                    <div class="bg-white p-4 p-md-5 rounded-5 shadow h-100">
+                        <form>
+                            <!-- Name -->
+                            <div class="mb-4">
+                                <label for="name" class="form-label fw-bold text-dark fs-5">Your Name</label>
+                                <input type="text" class="form-control form-control-lg custom-input" id="name"
+                                    placeholder="John Doe" required>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="mb-4">
+                                <label for="email" class="form-label fw-bold text-dark fs-5">Email Address</label>
+                                <input type="email" class="form-control form-control-lg custom-input" id="email"
+                                    placeholder="john@example.com" required>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="mb-4">
+                                <label for="phone" class="form-label fw-bold text-dark fs-5">Phone Number</label>
+                                <input type="tel" class="form-control form-control-lg custom-input" id="phone"
+                                    placeholder="+91 98765 43210" required>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="mb-4">
+                                <label for="message" class="form-label fw-bold text-dark fs-5">Your Message</label>
+                                <textarea class="form-control form-control-lg custom-input" id="message" rows="6"
+                                    placeholder="I'm interested in properties in Tricityrent..." required></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit"
+                                class="btn btn-success w-100 py-3 rounded-4 fw-bold fs-5 d-flex align-items-center justify-content-center gap-2 hover-lift">
+                                <i class="bi bi-send-fill"></i> Send Message <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Right Column: The Map -->
+                <div class="col-lg-6">
+                    <div class="rounded-5 overflow-hidden h-100 shadow map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109789.06871112876!2d76.64502274011193!3d30.692853322968464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fee906da6f81f%3A0x512998f16ce508d8!2sSahibzada%20Ajit%20Singh%20Nagar%2C%20Punjab!5e0!3m2!1sen!2sin!4v1768366104845!5m2!1sen!2sin"
+                            width="100%" height="100%" style="border:0; min-height: 600px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ==================== FAQ SECTION ==================== -->
+    <section class="py-5 bg-light">
+        <div class="container py-lg-4">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-dark mb-3">Frequently Asked Questions</h2>
+                <div class="divider-green mx-auto mb-4"></div>
+                <p class="text-secondary lead">Find answers to common questions about renting properties in Tricity with
+                    TriCityRent.</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+
+                        <!-- Item 1 -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded-3 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    How do I schedule a property viewing?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-secondary">
+                                    You can schedule a viewing directly on the property page by clicking “Book a Visit”
+                                    or contact our support team for assistance.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded-3 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    What documents do I need to rent a property?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-secondary">
+                                    Typically, you need ID proof (Aadhar/PAN), address proof, and income proof. Our team
+                                    will guide you through the exact requirements for each property.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded-3 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Can TriCityRent help me with rental agreements?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-secondary">
+                                    Yes! We provide guidance on rental agreements and ensure the process is smooth and
+                                    transparent.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded-3 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Which areas does TriCityRent cover?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-secondary">
+                                    We cover the entire Tricity region — Chandigarh, Mohali, Panchkula — including
+                                    suburbs like Zirakpur and Kharar.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Optional Item 5 -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded-3 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    How quickly can I move in after booking a property?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-secondary">
+                                    Many of our listings offer instant or flexible move-in dates. Our team will
+                                    coordinate with you and the property owner for a smooth handover.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==================== SOCIAL CONNECT ==================== -->
+    <section class="py-5 bg-success text-white">
+        <div class="container text-center py-lg-4">
+            <h2 class="display-5 fw-bold mb-3">Connect With Us</h2>
+            <div class="divider-white mx-auto mb-4"></div>
+            <p class="lead text-white-50 mb-5">Follow us on social media for property updates and market insights.</p>
+
+            <div class="d-flex justify-content-center gap-4">
+                <!-- <a href="#" class="social-circle"><i class="bi bi-facebook"></i></a> -->
+                <a href="https://www.youtube.com/@TricityRents" class="social-circle"><i class="bi bi-youtube"></i></a>
+                <a href="https://www.instagram.com/tricityrents" class="social-circle"><i class="bi bi-instagram"></i></a>
+                <a href="https://wa.me/+919876543210" class="social-circle"><i class="bi bi-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA DREAM HOME ==================== -->
+    <section class="py-5 bg-dark">
+        <div class="container text-center py-lg-4">
+            <h2 class="display-5 fw-bold text-white mb-4">Ready to Find Your Dream Home?</h2>
+            <p class="text-secondary lead mb-5 mx-auto" style="max-width: 700px;">
+                Our real estate experts are ready to help you find the perfect property that matches your needs and
+                budget.
+            </p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                <a href="tel:+917373722208" class="btn btn-success btn-lg rounded-pill px-5 fw-bold">
+                    <i class="bi bi-telephone me-2"></i> Call Us Now
+                </a>
+                <a href="/properties" class="btn btn-outline-light btn-lg rounded-pill px-5 fw-bold">
+                    Browse Properties <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FEATURED PROPERTIES ==================== -->
+    <section class="py-5 bg-light">
+        <div class="container py-lg-4">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-dark mb-3">Featured Properties</h2>
+                <div class="divider-green mx-auto mb-3"></div>
+                <p class="text-secondary">Explore some of our exclusive listings.</p>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <!-- Prop 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden hover-lift">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top object-fit-cover" height="250" alt="Villa">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-1">Luxury Villa in ECR</h5>
+                            <h4 class="text-success fw-bold mb-2">₹2.5 Cr</h4>
+                            <small class="text-secondary">4 BHK | 3500 sq.ft | Garden</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Prop 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden hover-lift">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top object-fit-cover" height="250" alt="Apartment">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-1">Modern Apartment</h5>
+                            <h4 class="text-success fw-bold mb-2">₹85 Lakhs</h4>
+                            <small class="text-secondary">3 BHK | 1800 sq.ft | Pool</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Prop 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden hover-lift">
+                        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top object-fit-cover" height="250" alt="Commercial">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-1">Commercial Space</h5>
+                            <h4 class="text-success fw-bold mb-2">₹1.8 Cr</h4>
+                            <small class="text-secondary">4500 sq.ft | Prime Location</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="/properties" class="btn btn-outline-success rounded-pill px-5 py-2 fw-bold">
+                    View All Properties
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer-section">
+        <div class="container">
+
+
+            <!-- Middle Section: Links -->
+            <div class="row g-4">
+
+                <!-- Column 1: About -->
+                <div class="col-lg-4 col-md-2">
+                    <h6 class="footer-heading">About Us</h6>
+                    <p class="text-white-50 small leading-loose mb-1">
+                        We are India's most trusted platform for renting homes, flats, and commercial spaces. Our
+                        mission is to make moving hassle-free and secure.
+                    </p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links (Col-6 on mobile for side-by-side) -->
+                <div class="col-6 col-lg-2 col-md-3">
+                    <h6 class="footer-heading">Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/" class="footer-link">Home</a></li>
+                        <li><a href="/about-us" class="footer-link">About Us</a></li>
+                        <li><a href="/properties" class="footer-link">Properties</a></li>
+                        <li><a href="/contact-us/" class="footer-link">Contact</a></li>
+                </div>
+
+                <!-- Column 3: Rentals (Col-6 on mobile) -->
+                <div class="col-6 col-lg-2 col-md-3">
+                    <h6 class="footer-heading">Rentals</h6>
+                    <ul class="list-unstyled">
+  <li><a href="/Apartments" class="footer-link">Apartments</a></li>
+                        <li><a href="/Villas" class="footer-link">Villas</a></li>
+                        <li><a href="/Offices" class="footer-link">Offices</a></li>
+                        <li><a href="/PG_House" class="footer-link">PG / Hostel</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact Info -->
+                <div class="col-lg-4 col-md-12">
+                    <h6 class="footer-heading">Contact</h6>
+                    <ul class="list-unstyled text-white-50 small">
+                        <!-- <li class="mb-3 d-flex gap-3">
+                            <i class="bi bi-geo-alt-fill text-success"></i>
+                            <span>123 Market Road, Mohali, Punjab, India 160055</span>
+                        </li> -->
+                        <li class="mb-3 d-flex gap-3">
+                            <i class="bi bi-envelope-fill text-success"></i>
+                            <a href="mailto:tricity0rent@gmail.com"
+                                class="text-white-50 text-decoration-none">tricity0rent@gmail.com</a>
+                        </li>
+                        <li class="mb-3 d-flex gap-3">
+                            <i class="bi bi-telephone-fill text-success"></i>
+                            <span>+91 8360769451</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Section: Copyright -->
+            <div class="row mt-5 pt-3 border-top border-secondary border-opacity-10">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-white-50 mb-0">&copy; 2025 Tricityrent. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <a href="/legal/privacy" class="text-white-50 text-decoration-none small me-3 footer-bottom-link">Privacy
+                        Policy</a>
+                    <a href="/legal/terms" class="text-white-50 text-decoration-none small footer-bottom-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

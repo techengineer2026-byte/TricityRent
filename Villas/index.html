@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Luxury Villas for Sale in Chandigarh, Mohali & Panchkula | Independent Houses</title>
+    <meta name="description"
+        content="Buy luxury villas, independent kothis, and duplex houses in Chandigarh, Mohali Aerocity, and Panchkula. 4 BHK, 5 BHK, and plot options available.">
+    <meta name="keywords"
+        content="Villas in Mohali, Kothi for sale Chandigarh, Duplex house Zirakpur, Luxury Villa Aerocity, Independent House Panchkula">
+    <link rel="canonical" href="https://tricityrent.com/Villas/">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <style>
+        /* --- VILLA HERO SECTION --- */
+        .villa-hero {
+            position: relative;
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+                url('https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1920&q=80') center/cover;
+            padding: 140px 0 100px;
+            margin-top: 60px;
+            color: white;
+            border-bottom-right-radius: 60px;
+        }
+
+        /* --- PREMIUM CATEGORY CARDS --- */
+        .luxury-card {
+            background: white;
+            border: 1px solid #f0f0f0;
+            border-radius: 16px;
+            padding: 25px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+        }
+
+        .luxury-card:hover,
+        .luxury-card.active {
+            transform: translateY(-8px);
+            border-color: #c5a47e;
+            /* Gold/Beige for Luxury */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .luxury-card.active {
+            background: #fffbf5;
+            /* Very light gold */
+        }
+
+        .lux-icon {
+            font-size: 2.2rem;
+            color: #c5a47e;
+            /* Gold color */
+            margin-bottom: 15px;
+        }
+
+        /* --- SPECIFIC BADGES --- */
+        .feature-chip {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            color: #555;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .price-text-lg {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #212529;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ==================== NAVBAR ==================== -->
+    <header class="navbar navbar-expand-lg fixed-top bg-white border-bottom transition-all" id="mainNavbar">
+        <div class="container-xl">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <div class="position-relative">
+                    <img src="../assets/images/Logo1.png" alt="HouseHunt" class="navbar-logo object-fit-contain">
+                </div>
+            </a>
+            <button class="navbar-toggler border-0 p-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent">
+                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                    stroke-linejoin="round" class="text-secondary" height="28" width="28">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <div class="navbar-nav mx-auto d-none d-lg-flex align-items-center gap-1 xl-gap-3">
+                    <a class="nav-link custom-link" href="/properties">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="me-2">
+                            <rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect>
+                            <path d="M9 22v-4h6v4"></path>
+                            <path d="M8 6h.01"></path>
+                            <path d="M16 6h.01"></path>
+                            <path d="M12 6h.01"></path>
+                            <path d="M12 10h.01"></path>
+                            <path d="M12 14h.01"></path>
+                            <path d="M16 10h.01"></path>
+                            <path d="M16 14h.01"></path>
+                            <path d="M8 10h.01"></path>
+                            <path d="M8 14h.01"></path>
+                        </svg>
+                        Properties
+                    </a>
+                    <a class="nav-link custom-link" href="/services">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                            stroke-linecap="round" stroke-linejoin="round" class="me-2" height="20" width="20">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                        Services
+                    </a>
+                    <a class="nav-link custom-link" href="/about-us">About Us</a>
+                    <a class="nav-link custom-link" href="/contact-us">Contact</a>
+                </div>
+                <div class="d-none d-lg-flex align-items-center gap-3">
+                    <button class="btn btn-icon-round">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                            stroke-linecap="round" stroke-linejoin="round" class="text-icon" height="20" width="20">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                    <div class="profile-pill">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                            stroke-linecap="round" stroke-linejoin="round" class="text-green-brand" height="18"
+                            width="18">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <span>Tricityrent</span>
+                    </div>
+                </div>
+                <div class="d-lg-none mt-3 pb-3 border-top pt-3">
+                    <div class="d-flex flex-column gap-2">
+                        <a class="mobile-link" href="/properties">Properties</a>
+                        <div class="border-top my-1"></div>
+                        <a class="mobile-link" href="/services">Services</a>
+                        <div class="border-top my-1"></div>
+                        <a class="mobile-link-icon" href="/about-us">About Us</a>
+                        <a class="mobile-link-icon" href="/contact-us">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="villa-hero text-center">
+        <div class="container">
+            <span
+                class="badge bg-warning text-dark px-3 py-2 rounded-pill mb-3 text-uppercase fw-bold tracking-wider">Premium
+                Collection</span>
+            <h1 class="display-3 fw-bold mb-3">Experience Luxury Living</h1>
+            <p class="lead text-white-90 mb-0 fs-5">Independent Villas, Duplex Kothis, and Premium Plots in Tricity.</p>
+        </div>
+    </section>
+
+    <!-- MAIN BROWSE SECTION -->
+    <section class="py-5 bg-light" id="browse-section">
+        <div class="container" style="margin-top: -80px;">
+
+            <!-- 1. LUXURY FILTER CARDS -->
+            <div class="row g-3 justify-content-center mb-5">
+                <div class="col-6 col-md-3">
+                    <div class="luxury-card" onclick="filterVillas('type', 'Villa')">
+                        <div class="lux-icon"><i class="bi bi-house-heart"></i></div>
+                        <h5 class="fw-bold mb-1">Luxury Villa</h5>
+                        <small class="text-muted">Premium & Spacious</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="luxury-card" onclick="filterVillas('type', 'Duplex')">
+                        <div class="lux-icon"><i class="bi bi-layers-half"></i></div>
+                        <h5 class="fw-bold mb-1">Duplex House</h5>
+                        <small class="text-muted">Double Story</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="luxury-card" onclick="filterVillas('type', 'Independent')">
+                        <div class="lux-icon"><i class="bi bi-houses"></i></div>
+                        <h5 class="fw-bold mb-1">Indep. Floor</h5>
+                        <small class="text-muted">Private Floors</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="luxury-card active" onclick="filterVillas('type', 'All')">
+                        <div class="lux-icon"><i class="bi bi-grid-1x2"></i></div>
+                        <h5 class="fw-bold mb-1">View All</h5>
+                        <small class="text-muted">All Listings</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. TOOLBAR: Location & Sort -->
+            <div
+                class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-4 gap-3 bg-white p-3 rounded-4 shadow-sm">
+
+                <!-- Location Filter -->
+                <div class="d-flex gap-2 overflow-auto w-100 w-md-auto pb-1" style="scrollbar-width: none;">
+                    <button class="btn btn-outline-secondary rounded-pill active px-4"
+                        onclick="filterVillas('city', 'All')">All</button>
+                    <button class="btn btn-outline-secondary rounded-pill px-4"
+                        onclick="filterVillas('city', 'Chandigarh')">Chandigarh</button>
+                    <button class="btn btn-outline-secondary rounded-pill px-4"
+                        onclick="filterVillas('city', 'Mohali')">Mohali</button>
+                    <button class="btn btn-outline-secondary rounded-pill px-4"
+                        onclick="filterVillas('city', 'Panchkula')">Panchkula</button>
+                    <button class="btn btn-outline-secondary rounded-pill px-4"
+                        onclick="filterVillas('city', 'New Chandigarh')">New Chandigarh</button>
+                </div>
+
+                <!-- Smart Sort -->
+                <select class="form-select w-auto rounded-pill border-secondary" onchange="sortVillas(this.value)">
+                    <option value="default">Sort: Featured</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="area-desc">Plot Size: Large to Small</option>
+                </select>
+            </div>
+
+            <!-- 3. LISTINGS GRID -->
+            <div class="d-flex justify-content-between align-items-end mb-3 px-2">
+                <h4 class="fw-bold text-dark mb-0">Featured Properties</h4>
+                <span class="text-muted small" id="count-label">Loading...</span>
+            </div>
+
+            <div class="row g-4" id="villa-list-container">
+                <div class="text-center w-100 py-5">
+                    <div class="spinner-border text-warning" role="status"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SEO CONTENT -->
+    <section class="py-5 bg-white border-top">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5">
+                    <img src="https://images.unsplash.com/photo-1600596542815-e32871138298?auto=format&fit=crop&w=800&q=80"
+                        class="img-fluid rounded-4 shadow-lg" alt="Luxury Interior">
+                </div>
+                <div class="col-lg-7">
+                    <h2 class="fw-bold mb-3">Why Invest in Tricity Villas?</h2>
+                    <p class="text-secondary mb-4">
+                        Chandigarh, Mohali, and Panchkula offer some of the best planned infrastructure in India. Buying
+                        a villa or "Kothi" here ensures high appreciation value and a premium lifestyle.
+                    </p>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start gap-3">
+                                <i class="bi bi-check-circle-fill text-success fs-5"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-0">Gated Communities</h6>
+                                    <small class="text-muted">24/7 Security & Clubhouses</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start gap-3">
+                                <i class="bi bi-check-circle-fill text-success fs-5"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-0">Wide Roads & Parks</h6>
+                                    <small class="text-muted">Green belts and spacious plots</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer-section">
+        <div class="container">
+
+
+            <!-- Middle Section: Links -->
+            <div class="row g-4">
+
+                <!-- Column 1: About -->
+                <div class="col-lg-4 col-md-2">
+                    <h6 class="footer-heading">About Us</h6>
+                    <p class="text-white-50 small leading-loose mb-1">
+                        We are India's most trusted platform for renting homes, flats, and commercial spaces. Our
+                        mission is to make moving hassle-free and secure.
+                    </p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links (Col-6 on mobile for side-by-side) -->
+                <div class="col-6 col-lg-2 col-md-3">
+                    <h6 class="footer-heading">Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/" class="footer-link">Home</a></li>
+                        <li><a href="/about-us" class="footer-link">About Us</a></li>
+                        <li><a href="/properties" class="footer-link">Properties</a></li>
+                        <li><a href="/contact-us/" class="footer-link">Contact</a></li>
+                </div>
+
+                <!-- Column 3: Rentals (Col-6 on mobile) -->
+                <div class="col-6 col-lg-2 col-md-3">
+                    <h6 class="footer-heading">Rentals</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/Apartments" class="footer-link">Apartments</a></li>
+                        <li><a href="/Villas" class="footer-link">Villas</a></li>
+                        <li><a href="/Offices" class="footer-link">Offices</a></li>
+                        <li><a href="/PG_House" class="footer-link">PG / Hostel</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact Info -->
+                <div class="col-lg-4 col-md-12">
+                    <h6 class="footer-heading">Contact</h6>
+                    <ul class="list-unstyled text-white-50 small">
+                        <!-- <li class="mb-3 d-flex gap-3">
+                            <i class="bi bi-geo-alt-fill text-success"></i>
+                            <span>123 Market Road, Mohali, Punjab, India 160055</span>
+                        </li> -->
+                        <li class="mb-3 d-flex gap-3">
+                            <i class="bi bi-envelope-fill text-success"></i>
+                            <a href="mailto:tricity0rent@gmail.com"
+                                class="text-white-50 text-decoration-none">tricity0rent@gmail.com</a>
+                        </li>
+                        <li class="mb-3 d-flex gap-3">
+                            <i class="bi bi-telephone-fill text-success"></i>
+                            <span>+91 8360769451</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Section: Copyright -->
+            <div class="row mt-5 pt-3 border-top border-secondary border-opacity-10">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-white-50 mb-0">&copy; 2025 Tricityrent. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <a href="/legal/privacy" class="text-white-50 text-decoration-none small me-3 footer-bottom-link">Privacy
+                        Policy</a>
+                    <a href="/legal/terms" class="text-white-50 text-decoration-none small footer-bottom-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Main Logic -->
+    <script src="../assets/js/villas.js"></script>
+
+</body>
+
+</html>

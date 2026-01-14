@@ -1,0 +1,82 @@
+{
+    "OFF001": {
+        "id": "OFF001",
+        "title": "Premium IT Office Space",
+        "type": "IT Park",
+        "status": "For Lease",
+        "area": "2,500 Sq.Ft",
+        "location": {
+            "sector": "Sector 82",
+            "city": "Mohali"
+        },
+        "price": "Price on Request",
+        "features": [
+            "Furnished",
+            "Server Room",
+            "Cafeteria"
+        ],
+        "images": [
+            "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80"
+        ]
+    },
+    "OFF002": {
+        "id": "OFF002",
+        "title": "Main Road Showroom",
+        "type": "Showroom",
+        "status": "For Sale",
+        "area": "150 Sq.Yards",
+        "location": {
+            "sector": "Airport Road",
+            "city": "Zirakpur"
+        },
+        "price": "Call for Info",
+        "features": [
+            "Ground Floor",
+            "Glass Front",
+            "Parking"
+        ],
+        "images": [
+            "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80"
+        ]
+    },
+    "OFF003": {
+        "id": "OFF003",
+        "title": "Corporate Office Suite",
+        "type": "Office",
+        "status": "For Rent",
+        "area": "1,200 Sq.Ft",
+        "location": {
+            "sector": "Sector 34",
+            "city": "Chandigarh"
+        },
+        "price": "₹65,000",
+        "features": [
+            "Cabin",
+            "Conference Room",
+            "Pantry"
+        ],
+        "images": [
+            "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80"
+        ]
+    },
+    "OFF004": {
+        "id": "OFF004",
+        "title": "Co-Working Desk",
+        "type": "Co-Working",
+        "status": "For Rent",
+        "area": "50 Sq.Ft",
+        "location": {
+            "sector": "Phase 8B",
+            "city": "Mohali"
+        },
+        "price": "₹6,500",
+        "features": [
+            "High Speed WiFi",
+            "AC",
+            "Tea/Coffee"
+        ],
+        "images": [
+            "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80"
+        ]
+    }
+}

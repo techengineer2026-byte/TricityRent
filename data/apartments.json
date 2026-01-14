@@ -1,0 +1,78 @@
+{
+    "APT001": {
+        "id": "APT001",
+        "title": "Luxury 3 BHK High Rise",
+        "type": "3 BHK",
+        "category": "Sale",
+        "status": "Ready to Move",
+        "price": 8500000,
+        "location": {
+            "sector": "VIP Road",
+            "city": "Zirakpur"
+        },
+        "area": "1850 Sq.Ft",
+        "features": [
+            "Club House",
+            "Pool View",
+            "Modular Kitchen"
+        ],
+        "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80"
+    },
+    "APT002": {
+        "id": "APT002",
+        "title": "Affordable 2 BHK Flat",
+        "type": "2 BHK",
+        "category": "Sale",
+        "status": "Under Construction",
+        "price": 4500000,
+        "location": {
+            "sector": "Sector 115",
+            "city": "Mohali"
+        },
+        "area": "1100 Sq.Ft",
+        "features": [
+            "Gated Society",
+            "Lift",
+            "Parking"
+        ],
+        "image": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80"
+    },
+    "APT003": {
+        "id": "APT003",
+        "title": "Furnished 2 BHK for Rent",
+        "type": "2 BHK",
+        "category": "Rent",
+        "status": "Available",
+        "price": 18000,
+        "location": {
+            "sector": "Sector 70",
+            "city": "Mohali"
+        },
+        "area": "1200 Sq.Ft",
+        "features": [
+            "Fully Furnished",
+            "AC",
+            "Near Market"
+        ],
+        "image": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    },
+    "APT004": {
+        "id": "APT004",
+        "title": "4 BHK Premium Penthouse",
+        "type": "4 BHK",
+        "category": "Sale",
+        "status": "Ready to Move",
+        "price": 16500000,
+        "location": {
+            "sector": "Aerocity",
+            "city": "Mohali"
+        },
+        "area": "2800 Sq.Ft",
+        "features": [
+            "Terrace Garden",
+            "Servant Room",
+            "Gym"
+        ],
+        "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
+    }
+}
