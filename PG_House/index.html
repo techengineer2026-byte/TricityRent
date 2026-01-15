@@ -4,103 +4,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PG & Hostels in Tricity | Price on Request & Affordable Options</title>
+    <title>PG House - Boys & Girls Hostels | TricityRent</title>
 
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS (Linking up one level) -->
     <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1SYDLQN3G2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
+        gtag('config', 'G-1SYDLQN3G2');
+    </script>
     <style>
-        /* Hero & Category Styles (Same as before) */
-        .pg-hero {
-            background: linear-gradient(135deg, #0f4c33 0%, #198754 100%);
-            color: white;
-            padding: 80px 0 60px;
-            border-bottom-right-radius: 50px;
-            border-bottom-left-radius: 50px;
-            margin-top: 60px;
+
+        /* 1. Hero Background Blobs */
+        .hero-pg {
+            background: linear-gradient(135deg, #f0fdf4 0%, #e0f2fe 100%);
+            position: relative;
+            overflow: hidden;
         }
 
-        .category-card {
-            background: white;
-            border-radius: 16px;
-            padding: 20px;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.3s;
-            border: 2px solid transparent;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-            height: 100%;
+        .blob {
+            position: absolute;
+            background: linear-gradient(45deg, #86efac, #3b82f6);
+            border-radius: 50%;
+            opacity: 0.3;
+            filter: blur(60px);
+            animation: floatBlob 10s infinite alternate;
         }
 
-        .category-card:hover,
-        .category-card.active {
-            transform: translateY(-5px);
-            border-color: #198754;
-            background-color: #f8fff9;
+        .blob-1 {
+            top: -10%;
+            left: -10%;
+            width: 300px;
+            height: 300px;
         }
 
-        .cat-icon {
-            font-size: 2rem;
-            margin-bottom: 10px;
+        .blob-2 {
+            bottom: -10%;
+            right: -10%;
+            width: 400px;
+            height: 400px;
+            animation-delay: 2s;
+            background: linear-gradient(45deg, #f472b6, #fb7185);
         }
 
-        /* Location Pills */
-        .location-scroll {
-            display: flex;
-            gap: 10px;
-            overflow-x: auto;
-            padding-bottom: 5px;
-            scrollbar-width: none;
+        @keyframes floatBlob {
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            100% {
+                transform: translate(20px, 40px) scale(1.1);
+            }
         }
 
-        .location-pill {
+        /* 2. Glassmorphism City Cards */
+        .city-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            overflow: hidden;
+        }
+
+        .city-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border-color: #22c55e;
+        }
+
+        .city-img {
+            transition: transform 0.5s ease;
+        }
+
+        .city-card:hover .city-img {
+            transform: scale(1.1);
+        }
+
+        /* 3. Split Screen */
+        .split-box {
+            transition: transform 0.3s ease;
+        }
+
+        .split-box:hover {
+            transform: scale(1.02);
+            z-index: 2;
+        }
+
+        /* 4. Marquee Text */
+        .marquee-container {
+            overflow: hidden;
             white-space: nowrap;
+        }
+
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 20s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .search-tag {
+            display: inline-block;
             padding: 8px 20px;
+            background: #f3f4f6;
             border-radius: 50px;
-            border: 1px solid #e9ecef;
-            background: white;
-            color: #555;
-            font-size: 0.9rem;
-            transition: all 0.2s;
-        }
-
-        .location-pill.active {
-            background-color: #198754;
-            color: white;
-            border-color: #198754;
-        }
-
-        /* --- PRICE & CARD STYLES --- */
-        .sort-select {
-            border-radius: 50px;
-            padding: 8px 20px;
-            border: 1px solid #dee2e6;
-            background-color: #fff;
-            cursor: pointer;
-            font-size: 0.9rem;
-        }
-
-        .price-badge {
-            background-color: #e8f5e9;
-            color: #198754;
-            padding: 5px 12px;
-            border-radius: 8px;
-            font-weight: 700;
-            font-size: 1rem;
-        }
-
-        .price-request-badge {
-            background-color: #f8f9fa;
-            color: #6c757d;
-            border: 1px solid #dee2e6;
-            padding: 5px 12px;
-            border-radius: 8px;
-            font-weight: 600;
+            margin-right: 15px;
+            color: #6b7280;
             font-size: 0.9rem;
         }
     </style>
+
+
 </head>
 
 <body>
@@ -110,7 +140,8 @@
         <div class="container-xl">
             <a class="navbar-brand d-flex align-items-center" href="/">
                 <div class="position-relative">
-                    <img src="../assets/images/Logo1.png" alt="HouseHunt" class="navbar-logo object-fit-contain">
+                    <img src="../assets/images/Logo1.png" alt="TriCityRent - Real Estate in Chandigarh Mohali"
+                        class="navbar-logo object-fit-contain">
                 </div>
             </a>
             <button class="navbar-toggler border-0 p-2" type="button" data-bs-toggle="collapse"
@@ -185,90 +216,337 @@
         </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="pg-hero text-center">
-        <div class="container">
-            <h1 class="display-5 fw-bold">Find Your Next Stay</h1>
-            <p class="lead text-white-50 fs-6">Chandigarh • Mohali • Zirakpur • Kharar</p>
+    <!-- ==================== 1. HERO SECTION ==================== -->
+    <section class="hero-pg py-5 mt-5 min-vh-75 d-flex align-items-center justify-content-center text-center">
+        <!-- Blobs -->
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+
+        <div class="container position-relative z-2">
+            <span class="badge bg-white text-success shadow-sm px-3 py-2 rounded-pill mb-3 text-uppercase fw-bold ls-1">
+                <i class="bi bi-stars"></i> Premium Hostels
+            </span>
+            <h1 class="display-3 fw-bold text-dark mb-4">
+                Find the Perfect PG for <br> <span class="text-primary">Boys</span> & <span
+                    class="text-danger">Girls</span>
+            </h1>
+            <p class="lead text-secondary mx-auto mb-5" style="max-width: 600px;">
+                Safe, clean & affordable PG accommodation for students & professionals in the Tricity. No Brokerage.
+            </p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                <a href="#city-selector" class="btn btn-success btn-lg rounded-pill px-5 fw-bold shadow-lg hover-lift">
+                    Explore PGs
+                </a>
+                <a href="../contact-us/index.html"
+                    class="btn btn-white btn-lg rounded-pill px-5 fw-bold shadow-sm border hover-lift">
+                    List Your PG
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- MAIN INTERFACE -->
-    <section class="py-5 bg-light" id="browse-section">
-        <div class="container" style="margin-top: -80px;">
+    <!-- ==================== 2. CITY SELECTOR ==================== -->
+    <section class="py-5 bg-white" id="city-selector">
+        <div class="container py-lg-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold display-6">Choose Your City</h2>
+                <p class="text-secondary">Find properties in your preferred location</p>
+            </div>
 
-            <!-- 1. TYPE SELECTOR (Visual Cards) -->
-            <div class="row g-2 justify-content-center mb-4">
-                <div class="col-3 col-md-2">
-                    <div class="category-card" onclick="updateFilter('type', 'Boys')">
-                        <div class="cat-icon text-primary"><i class="bi bi-gender-male"></i></div>
-                        <small class="fw-bold d-block">Boys</small>
-                    </div>
+            <div class="row g-4 justify-content-center">
+
+                <!-- Chandigarh -->
+                <div class="col-6 col-md-4 col-lg">
+                    <a href="pg-chandigarh" class="text-decoration-none">
+                        <div class="card city-card h-100 border-0 rounded-4">
+                            <div class="position-relative overflow-hidden" style="height: 180px;">
+                                <img src="../assets/images/chandigarhbg.webp"
+                                    class="w-100 h-100 object-fit-cover city-img" alt="Chandigarh">
+                                <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-gradient-to-t">
+                                    <h5 class="text-white fw-bold mb-0 text-shadow">Chandigarh</h5>
+                                    <small class="text-white-50">120+ PGs</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-3 col-md-2">
-                    <div class="category-card" onclick="updateFilter('type', 'Girls')">
-                        <div class="cat-icon text-danger"><i class="bi bi-gender-female"></i></div>
-                        <small class="fw-bold d-block">Girls</small>
-                    </div>
+
+                <!-- Mohali -->
+                <div class="col-6 col-md-4 col-lg">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card city-card h-100 border-0 rounded-4">
+                            <div class="position-relative overflow-hidden" style="height: 180px;">
+                                <img src="../assets/images/mohali.jpg" class="w-100 h-100 object-fit-cover city-img"
+                                    alt="Mohali">
+                                <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-gradient-to-t">
+                                    <h5 class="text-white fw-bold mb-0 text-shadow">Mohali</h5>
+                                    <small class="text-white-50">85+ PGs</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-3 col-md-2">
-                    <div class="category-card" onclick="updateFilter('type', '1 BHK')">
-                        <div class="cat-icon text-warning"><i class="bi bi-house"></i></div>
-                        <small class="fw-bold d-block">1 BHK</small>
-                    </div>
+
+                <!-- Kharar -->
+                <div class="col-6 col-md-4 col-lg">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card city-card h-100 border-0 rounded-4">
+                            <div class="position-relative overflow-hidden" style="height: 180px;">
+                                <img src="../assets/images/Kharara.webp" class="w-100 h-100 object-fit-cover city-img"
+                                    alt="Kharar">
+                                <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-gradient-to-t">
+                                    <h5 class="text-white fw-bold mb-0 text-shadow">Kharar</h5>
+                                    <small class="text-white-50">200+ PGs</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-3 col-md-2">
-                    <div class="category-card active" onclick="updateFilter('type', 'All')">
-                        <div class="cat-icon text-success"><i class="bi bi-grid"></i></div>
-                        <small class="fw-bold d-block">All</small>
-                    </div>
+
+                <!-- Zirakpur -->
+                <div class="col-6 col-md-4 col-lg">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card city-card h-100 border-0 rounded-4">
+                            <div class="position-relative overflow-hidden" style="height: 180px;">
+                                <img src="../assets/images/Park_Plaza_Zirakpur_-_facade_evu0jl.avif"
+                                    class="w-100 h-100 object-fit-cover city-img" alt="Zirakpur">
+                                <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-gradient-to-t">
+                                    <h5 class="text-white fw-bold mb-0 text-shadow">Zirakpur</h5>
+                                    <small class="text-white-50">50+ PGs</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Panchkula -->
+                <div class="col-6 col-md-4 col-lg">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card city-card h-100 border-0 rounded-4">
+                            <div class="position-relative overflow-hidden" style="height: 180px;">
+                                <img src="../assets/images/pklc.jpg" class="w-100 h-100 object-fit-cover city-img"
+                                    alt="Panchkula">
+                                <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-gradient-to-t">
+                                    <h5 class="text-white fw-bold mb-0 text-shadow">Panchkula</h5>
+                                    <small class="text-white-50">Coming Soon</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 3. BOYS VS GIRLS ==================== -->
+    <section class="container py-5">
+        <div class="row g-0 rounded-5 overflow-hidden shadow-lg">
+
+            <!-- Boys Side (Dark) -->
+            <div
+                class="col-md-6 bg-dark text-white p-5 split-box d-flex flex-column justify-content-center text-center text-md-start">
+                <div class="mb-3"><i class="bi bi-gender-male display-1 text-primary"></i></div>
+                <h2 class="fw-bold mb-3">Boys PG</h2>
+                <p class="text-white-50 mb-4">Flexible, affordable PGs near colleges & offices. Includes Gym, Wi-Fi, and
+                    No-Curfew options.</p>
+                <div>
+                    <a href="pg-chandigarh/index.html" class="btn btn-primary rounded-pill px-4 fw-bold">Explore Boys
+                        PG</a>
                 </div>
             </div>
 
-            <!-- 2. TOOLBAR: Location Filters + SORT BY -->
-            <div class="bg-white p-3 rounded-4 shadow-sm border mb-4">
-                <div class="row align-items-center gy-3">
+            <!-- Girls Side (Light/Pastel) -->
+            <div
+                class="col-md-6 bg-danger-subtle text-dark p-5 split-box d-flex flex-column justify-content-center text-center text-md-start">
+                <div class="mb-3"><i class="bi bi-gender-female display-1 text-danger"></i></div>
+                <h2 class="fw-bold mb-3">Girls PG</h2>
+                <p class="text-secondary mb-4">Safe PGs with verified owners, CCTV security, and female-friendly
+                    neighborhoods.</p>
+                <div>
+                    <a href="pg-chandigarh/index.html" class="btn btn-danger rounded-pill px-4 fw-bold">Explore Girls
+                        PG</a>
+                </div>
+            </div>
 
-                    <!-- Left: Location Pills -->
-                    <div class="col-md-8">
-                        <div class="location-scroll">
-                            <button class="location-pill active" onclick="updateFilter('city', 'All')">All
-                                Cities</button>
-                            <button class="location-pill"
-                                onclick="updateFilter('city', 'Chandigarh')">Chandigarh</button>
-                            <button class="location-pill" onclick="updateFilter('city', 'Mohali')">Mohali</button>
-                            <button class="location-pill" onclick="updateFilter('city', 'Kharar')">Kharar</button>
-                            <button class="location-pill" onclick="updateFilter('city', 'Zirakpur')">Zirakpur</button>
+        </div>
+    </section>
+
+    <!-- ==================== 4. WHY TRUST US ==================== -->
+    <section class="py-5 bg-white">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5">Why TricityRent?</h2>
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <div class="p-3">
+                        <i class="bi bi-shield-check fs-1 text-success mb-3 d-block"></i>
+                        <h5 class="fw-bold">Verified PGs</h5>
+                        <p class="small text-secondary">Every listing is physically verified.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3">
+                        <i class="bi bi-wallet2 fs-1 text-success mb-3 d-block"></i>
+                        <h5 class="fw-bold">No Brokerage</h5>
+                        <p class="small text-secondary">Direct owner connections.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3">
+                        <i class="bi bi-stars fs-1 text-success mb-3 d-block"></i>
+                        <h5 class="fw-bold">Hygienic</h5>
+                        <p class="small text-secondary">Clean rooms & washrooms.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3">
+                        <i class="bi bi-geo-alt fs-1 text-success mb-3 d-block"></i>
+                        <h5 class="fw-bold">Prime Areas</h5>
+                        <p class="small text-secondary">Close to markets & transport.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 5. LIVE SEARCH TAGS ==================== -->
+    <section class="py-4 bg-light border-top border-bottom">
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span class="search-tag">🔥 PG for girls in Chandigarh</span>
+                <span class="search-tag">🏠 Safe PG near University</span>
+                <span class="search-tag">💰 Boys PG under 8k</span>
+                <span class="search-tag">✨ Clean PG in Mohali</span>
+                <span class="search-tag">🏢 PG near IT Park</span>
+                <span class="search-tag">📶 PG with Wi-Fi & Food</span>
+                <span class="search-tag">🔥 PG for girls in Chandigarh</span>
+                <span class="search-tag">🏠 Safe PG near University</span>
+                <span class="search-tag">💰 Boys PG under 8k</span>
+                <span class="search-tag">✨ Clean PG in Mohali</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 6. FEATURED MOCK LISTINGS ==================== -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end mb-4">
+                <h3 class="fw-bold">Featured Stays</h3>
+                <a href="pg-chandigarh/index.html" class="text-success fw-bold text-decoration-none">View All</a>
+            </div>
+
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                        <div class="position-relative">
+                            <img src="../assets/images/Luxury-Boys-PG.avif"
+                                class="card-img-top object-fit-cover" height="220" alt="PG">
+                            <span class="badge bg-primary position-absolute top-0 start-0 m-3">Boys</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="fw-bold">Luxury Boys PG</h5>
+                            <p class="text-secondary small"><i class="bi bi-geo-alt"></i> Sector 15, Chandigarh</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-success">Call for Price</span>
+                                <a href="pg-chandigarh/index.html"
+                                    class="btn btn-sm btn-outline-dark rounded-pill">View</a>
+                            </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Right: Sort Dropdown (Handles the Budget Issue) -->
-                    <div class="col-md-4 text-md-end">
-                        <select class="sort-select w-100 w-md-auto" onchange="sortListings(this.value)">
-                            <option value="default">Sort: Recommended</option>
-                            <option value="low">Price: Low to High</option>
-                            <option value="high">Price: High to Low</option>
-                        </select>
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                        <div class="position-relative">
+                            <img src="../assets/images/Hostel- Phase7-Mohali.webp"
+                                class="card-img-top object-fit-cover" height="220" alt="PG">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-3">Girls</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="fw-bold">Premium Girls Hostel</h5>
+                            <p class="text-secondary small"><i class="bi bi-geo-alt"></i> Phase 7, Mohali</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-success">Call for Price</span>
+                                <a href="#" class="btn btn-sm btn-outline-dark rounded-pill">View</a>
+                            </div>
+                        </div>
                     </div>
+                </div>
 
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                        <div class="position-relative">
+                            <img src="../assets/images/Privatekharar.webp"
+                                class="card-img-top object-fit-cover" height="220" alt="PG">
+                            <span class="badge bg-success position-absolute top-0 start-0 m-3">1 BHK</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="fw-bold">Independent Flat</h5>
+                            <p class="text-secondary small"><i class="bi bi-geo-alt"></i> Kharar</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-success">Call for Price</span>
+                                <a href="#" class="btn btn-sm btn-outline-dark rounded-pill">View</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <!-- 3. DYNAMIC LIST -->
-            <div class="d-flex justify-content-between align-items-end mb-3">
-                <h5 class="fw-bold mb-0 text-dark">Latest Listings</h5>
-                <span class="text-muted small" id="count-label">Loading...</span>
-            </div>
-
-            <div id="pg-list-container" class="row g-4">
-                <!-- Cards injected via JS -->
-                <div class="text-center w-100 py-5">
-                    <div class="spinner-border text-success" role="status"></div>
-                </div>
-            </div>
-
         </div>
     </section>
+
+    <!-- ==================== 7. POWER CTA ==================== -->
+    <section class="py-5 bg-dark text-white text-center position-relative overflow-hidden">
+        <div class="container position-relative z-2">
+            <h2 class="display-5 fw-bold mb-3">Still Confused?</h2>
+            <p class="text-white-50 mb-5">Let our PG experts help you find the perfect room for FREE.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="tel:+919876543210" class="btn btn-success btn-lg rounded-pill px-5 fw-bold"><i
+                        class="bi bi-telephone-fill"></i> Call Now</a>
+                <a href="../contact-us/index.html" class="btn btn-outline-light btn-lg rounded-pill px-5 fw-bold">Get
+                    Help</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 8. FAQ ==================== -->
+    <section class="py-5 bg-white">
+        <div class="container" style="max-width: 800px;">
+            <h3 class="fw-bold text-center mb-5">Common Questions</h3>
+            <div class="accordion" id="pgFaq">
+                <div class="accordion-item border-0 mb-3 shadow-sm rounded-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq1">
+                            Is brokerage charged?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#pgFaq">
+                        <div class="accordion-body text-secondary">
+                            No, we connect you directly with owners. There is zero brokerage on most listings.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-0 mb-3 shadow-sm rounded-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq2">
+                            Are the PGs safe for girls?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#pgFaq">
+                        <div class="accordion-body text-secondary">
+                            Absolutely. We list verified properties in safe residential zones with CCTV and secure
+                            entry.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ==================== FOOTER ==================== -->
     <footer class="footer-section">
         <div class="container">
@@ -298,14 +576,14 @@
                         <li><a href="/" class="footer-link">Home</a></li>
                         <li><a href="/about-us" class="footer-link">About Us</a></li>
                         <li><a href="/properties" class="footer-link">Properties</a></li>
-                        <li><a href="/contact-us/" class="footer-link">Contact</a></li>
+                        <li><a href="/contact-us" class="footer-link">Contact</a></li>
                 </div>
 
                 <!-- Column 3: Rentals (Col-6 on mobile) -->
                 <div class="col-6 col-lg-2 col-md-3">
                     <h6 class="footer-heading">Rentals</h6>
                     <ul class="list-unstyled">
-  <li><a href="/Apartments" class="footer-link">Apartments</a></li>
+                        <li><a href="/Apartments" class="footer-link">Apartments</a></li>
                         <li><a href="/Villas" class="footer-link">Villas</a></li>
                         <li><a href="/Offices" class="footer-link">Offices</a></li>
                         <li><a href="/PG_House" class="footer-link">PG / Hostel</a></li>
@@ -327,7 +605,8 @@
                         </li>
                         <li class="mb-3 d-flex gap-3">
                             <i class="bi bi-telephone-fill text-success"></i>
-                            <span>+91 8360769451</span>
+                            <!-- Make phone clickable -->
+                            <a href="tel:+918360769451" class="text-decoration-none text-white-50">+91 8360769451</a>
                         </li>
                     </ul>
                 </div>
@@ -339,42 +618,47 @@
                     <p class="small text-white-50 mb-0">&copy; 2025 Tricityrent. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
-                    <a href="/legal/privacy" class="text-white-50 text-decoration-none small me-3 footer-bottom-link">Privacy
+                    <a href="/legal/privacy"
+                        class="text-white-50 text-decoration-none small me-3 footer-bottom-link">Privacy
                         Policy</a>
-                    <a href="/legal/terms" class="text-white-50 text-decoration-none small footer-bottom-link">Terms of Service</a>
+                    <a href="/legal/terms" class="text-white-50 text-decoration-none small footer-bottom-link">Terms of
+                        Service</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
+    <!-- ==================== MOBILE BOTTOM NAV ==================== -->
+    <div id="mobileBottomNav" class="fixed-bottom d-block d-lg-none z-3 pb-3 px-3 transition-nav">
+        <div class="mobile-nav-container shadow-lg border">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="../index.html" class="mobile-nav-item"><i class="bi bi-house"></i><span>Home</span></a>
+                <a href="../properties/index.html" class="mobile-nav-item"><i
+                        class="bi bi-building"></i><span>Buy</span></a>
+                <a href="#" class="mobile-nav-item active"><i class="bi bi-people"></i><span>PG</span></a>
+                <a href="../contact-us/index.html" class="mobile-nav-item"><i
+                        class="bi bi-geo-alt"></i><span>Contact</span></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/pg-main.js"></script>
-
-    <!-- UI Logic Script -->
     <script>
-        // UI Helper for Active States
-        function updateFilter(category, value) {
-            if (category === 'type') {
-                document.querySelectorAll('.category-card').forEach(c => c.classList.remove('active'));
-                const target = document.querySelector(`.category-card[onclick="updateFilter('type', '${value}')"]`);
-                if (target) target.classList.add('active');
+        // Mobile Nav Fade
+        document.addEventListener("scroll", function () {
+            const bottomNav = document.getElementById("mobileBottomNav");
+            const footer = document.querySelector("footer");
+            if (!bottomNav || !footer) return;
+            const footerRect = footer.getBoundingClientRect();
+            if (footerRect.top < window.innerHeight - 20) {
+                bottomNav.classList.add("nav-hidden");
+            } else {
+                bottomNav.classList.remove("nav-hidden");
             }
-            if (category === 'city') {
-                document.querySelectorAll('.location-pill').forEach(b => b.classList.remove('active'));
-                const target = document.querySelector(`.location-pill[onclick="updateFilter('city', '${value}')"]`);
-                if (target) target.classList.add('active');
-            }
-
-            // Call the main logic function
-            if (typeof filterPG === 'function') filterPG(category, value);
-        }
-
-        // Logic for Sorting
-        function sortListings(criteria) {
-            if (typeof sortPGData === 'function') sortPGData(criteria);
-        }
+        });
     </script>
+
 </body>
 
 </html>

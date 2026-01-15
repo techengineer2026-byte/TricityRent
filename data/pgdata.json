@@ -89,26 +89,71 @@
     },
     "PG007": {
         "id": "PG007",
-        "title": "Luxury PG for Girls - Sector 21",
+        "title": "Shared PG in 10 BHK Independent Villa - Mohali",
         "type": "PG",
-        "category": "Girls",
-        "occupancy": "Double Sharing",
+        "category": "Girls & Boys",
+        "occupancy": "Shared Room",
         "status": "Available",
         "location": {
-            "sector": "Sector 21",
+            "sector": "Mohali",
             "city": "Chandigarh"
         },
-        "price": "₹9,000 / mo",
+        "price": "₹1,20,000 / mo (Full Property)",
+        "rentType": "Rent",
+        "propertyDetails": {
+            "propertyType": "Independent House/Villa",
+            "bhk": "10 BHK",
+            "bathrooms": 8,
+            "balconies": 3,
+            "totalCapacity": 25,
+            "bedsPerRoom": 2,
+            "bedsAvailable": 2,
+            "furnishing": "Furnished",
+            "availableFrom": "Immediate",
+            "postedOn": "2026-01-02",
+            "postedBy": "Dealer",
+            "propertyAge": "10+ Years",
+            "flooring": "Marble",
+            "facing": "East",
+            "wheelchairFriendly": true,
+            "suitableFor": "Students"
+        },
         "amenities": [
             "Wi-Fi",
-            "Food",
-            "AC",
-            "Gym",
-            "Laundry"
+            "Water Supply",
+            "Food Included",
+            "Air Conditioned",
+            "Attached Bathroom",
+            "Attached Balcony",
+            "Park",
+            "Visitor Parking",
+            "Waste Disposal",
+            "Rain Water Harvesting",
+            "Water Storage"
         ],
+        "roomFurnishings": [
+            "Bed",
+            "Fan",
+            "Fridge",
+            "Study Table",
+            "Geyser",
+            "Light",
+            "AC",
+            "Curtains"
+        ],
+        "houseRules": {
+            "lastEntryTime": "23:00"
+        },
+        "reraStatus": "Not Available",
+        "propertyCode": "S87758490",
+        "website": "www.99acres.com/S87758490",
         "images": [
-            "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=800&q=80"
-        ]
+            "assets/images/Data/S0001.jpg",
+            "assets/images/Data/S0002.jpg",
+            "assets/images/Data/S0003.jpg",
+            "assets/images/Data/S0004.jpg"
+        ],
+        "description": "Independent furnished kothi located in Mohali near market, hospital, and school. Suitable for students with shared accommodation for girls and boys."
     },
     "FL003": {
         "id": "FL003",

@@ -1208,3 +1208,43 @@ body {
 .badge.bg-danger {
     background-color: #dc2626 !important;
 }
+
+/* ================== PG CITY PAGE UTILITIES ================== */
+
+/* Filter Card Colors */
+.bg-blue-subtle {
+    background-color: #e0f2fe;
+}
+
+.bg-pink-subtle {
+    background-color: #fce7f3;
+}
+
+.bg-success-subtle {
+    background-color: #dcfce7;
+}
+
+/* Filter Card Hover */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.hover-lift {
+    transition: transform 0.2s;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+}
+
+/* Max Width for text block */
+.max-w-800 {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Hover White Link */
+.hover-white:hover {
+    color: #fff !important;
+    text-decoration: underline !important;
+}
